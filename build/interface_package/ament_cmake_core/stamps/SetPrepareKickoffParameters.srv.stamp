@@ -1,0 +1,4 @@
+interface_package/PrepareKickoffParameters params
+---
+bool ok
+string message

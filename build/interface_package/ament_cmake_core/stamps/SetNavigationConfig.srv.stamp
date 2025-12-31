@@ -1,0 +1,4 @@
+interface_package/NavigationConfig config
+---
+bool ok
+string message

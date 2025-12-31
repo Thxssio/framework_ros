@@ -1,0 +1,12 @@
+uint32 robot_id
+interface_package/BehaviorChoice behavior
+
+interface_package/NavigationConfig nav
+interface_package/KickParameters kick
+interface_package/PrepareKickoffParameters prep
+---
+bool accepted
+string message
+---
+interface_package/BehaviorStatus status
+interface_package/ControlCommand last_command

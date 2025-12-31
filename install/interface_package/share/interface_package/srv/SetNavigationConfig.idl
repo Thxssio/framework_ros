@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/SetNavigationConfig.srv
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/NavigationConfig.idl"
+
+module interface_package {
+  module srv {
+    struct SetNavigationConfig_Request {
+      interface_package::msg::NavigationConfig config;
+    };
+    struct SetNavigationConfig_Response {
+      boolean ok;
+
+      string message;
+    };
+  };
+};

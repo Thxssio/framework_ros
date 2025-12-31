@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/SendReplacementRobot.srv
+// generated code does not contain a copyright notice
+
+
+module interface_package {
+  module srv {
+    struct SendReplacementRobot_Request {
+      uint32 robot_id;
+
+      boolean is_yellow;
+
+      double x;
+
+      double y;
+
+      double theta;
+
+      boolean present;
+    };
+    struct SendReplacementRobot_Response {
+      boolean ok;
+
+      string message;
+    };
+  };
+};

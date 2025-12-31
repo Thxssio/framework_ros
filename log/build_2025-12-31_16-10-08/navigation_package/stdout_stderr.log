@@ -1,0 +1,58 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found interface_package: 0.0.0 (/home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/thxssio/robotics_framework/build/navigation_package
+[35m[1mConsolidate compiler generated dependencies of target navigation_manager_node[0m
+[35m[1mConsolidate compiler generated dependencies of target navigation_module[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/navigation_module.dir/src/navigation_module.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/navigation_module.dir/src/trajectory_optimizer.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/navigation_module.dir/src/path_planner.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/navigation_manager_node.dir/src/navigation_manager_node.cpp.o[0m
+[ 83%] [32m[1mLinking CXX static library libnavigation_module.a[0m
+[ 83%] Built target navigation_module
+[100%] [32m[1mLinking CXX executable navigation_manager_node[0m
+[100%] Built target navigation_manager_node
+-- Install configuration: ""
+-- Installing: /home/thxssio/robotics_framework/install/navigation_package/lib/libnavigation_module.a
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/navigation
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/navigation/navigation_module.h
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/planning
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/planning/path_planner.h
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/planning/trajectory_optimizer.h
+-- Installing: /home/thxssio/robotics_framework/install/navigation_package/lib/navigation_package/navigation_manager_node
+-- Set runtime path of "/home/thxssio/robotics_framework/install/navigation_package/lib/navigation_package/navigation_manager_node" to ""
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/library_path.sh
+-- Installing: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/library_path.dsv
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/ament_index/resource_index/package_run_dependencies/navigation_package
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/ament_index/resource_index/parent_prefix_path/navigation_package
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/ament_prefix_path.sh
+-- Installing: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/path.sh
+-- Installing: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/path.dsv
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/local_setup.bash
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/local_setup.sh
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/local_setup.zsh
+-- Installing: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/local_setup.dsv
+-- Installing: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.dsv
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/ament_index/resource_index/packages/navigation_package
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/export_navigation_moduleExport.cmake
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/export_navigation_moduleExport-noconfig.cmake
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/navigation_packageConfig.cmake
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/navigation_packageConfig-version.cmake
+-- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.xml

@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interface_package/msg/ControlCommand.msg
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/Twist2D.idl"
+
+module interface_package {
+  module msg {
+    @verbatim (language="comment", text=
+      "espelha teu ControlCommand/C++: tu tem \"velocity\" optional, mas em ROS msg não tem optional nativo")
+    struct ControlCommand {
+      boolean has_velocity;
+
+      interface_package::msg::Twist2D velocity;
+
+      @verbatim (language="comment", text=
+        "espaço pra outros campos (chute/dribbler etc) quando você expor")
+      boolean kick;
+
+      double kick_speed;
+
+      boolean dribbler;
+
+      double dribbler_rpm;
+    };
+  };
+};

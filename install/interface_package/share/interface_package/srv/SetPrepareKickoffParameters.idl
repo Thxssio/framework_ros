@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/SetPrepareKickoffParameters.srv
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/PrepareKickoffParameters.idl"
+
+module interface_package {
+  module srv {
+    struct SetPrepareKickoffParameters_Request {
+      interface_package::msg::PrepareKickoffParameters params;
+    };
+    struct SetPrepareKickoffParameters_Response {
+      boolean ok;
+
+      string message;
+    };
+  };
+};

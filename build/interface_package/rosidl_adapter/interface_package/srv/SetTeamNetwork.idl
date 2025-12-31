@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/SetTeamNetwork.srv
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/TeamColor.idl"
+
+module interface_package {
+  module srv {
+    struct SetTeamNetwork_Request {
+      interface_package::msg::TeamColor team;
+
+      string host;
+
+      uint16 port;
+    };
+    struct SetTeamNetwork_Response {
+      boolean ok;
+
+      string message;
+    };
+  };
+};

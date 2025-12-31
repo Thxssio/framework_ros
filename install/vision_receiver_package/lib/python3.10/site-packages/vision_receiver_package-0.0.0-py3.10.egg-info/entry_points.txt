@@ -1,0 +1,3 @@
+[console_scripts]
+vision_receiver = vision_receiver_package.vision_node:main
+

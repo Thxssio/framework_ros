@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interface_package/msg/BehaviorChoice.msg
+// generated code does not contain a copyright notice
+
+
+module interface_package {
+  module msg {
+    module BehaviorChoice_Constants {
+      const uint8 NONE = 0;
+      const uint8 GO_TO_BALL = 1;
+      const uint8 PREPARE_KICKOFF = 2;
+      const uint8 KICKOFF = 3;
+      const uint8 GOALKEEPER = 4;
+      const uint8 AVOID_BALL = 5;
+      const uint8 PATROL_CORNERS = 6;
+    };
+    struct BehaviorChoice {
+      uint8 value;
+    };
+  };
+};

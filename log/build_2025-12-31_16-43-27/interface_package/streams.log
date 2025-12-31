@@ -1,0 +1,1165 @@
+[0.010s] Invoking command in '/home/thxssio/robotics_framework/build/interface_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thxssio/robotics_framework/build/interface_package -- -j16 -l16
+[0.046s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.182s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.183s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.185s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.218s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.675s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.900s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.181s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.231s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.275s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.276s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.276s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.302s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.326s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.329s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.330s] -- Added test 'lint_cmake' to check CMake code style
+[1.331s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.334s] -- Added test 'xmllint' to check XML markup files
+[1.335s] -- Configuring done
+[1.439s] -- Generating done
+[1.460s] -- Build files have been written to: /home/thxssio/robotics_framework/build/interface_package
+[1.491s] [  1%] Generating C code for ROS interfaces
+[1.503s] [  1%] Generating C++ code for ROS interfaces
+[1.524s] [  1%] Built target ament_cmake_python_copy_interface_package
+[1.953s] running egg_info
+[1.955s] writing interface_package.egg-info/PKG-INFO
+[1.955s] writing dependency_links to interface_package.egg-info/dependency_links.txt
+[1.955s] writing top-level names to interface_package.egg-info/top_level.txt
+[1.965s] reading manifest file 'interface_package.egg-info/SOURCES.txt'
+[1.967s] writing manifest file 'interface_package.egg-info/SOURCES.txt'
+[2.020s] [  1%] Built target ament_cmake_python_build_interface_package_egg
+[3.512s] Consolidate compiler generated dependencies of target interface_package__rosidl_generator_c
+[3.530s] [  1%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/field_dimensions__functions.c.o
+[3.530s] [  1%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/ball_state__functions.c.o
+[3.530s] [  1%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/behavior_choice__functions.c.o
+[3.531s] [  2%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/control_command__functions.c.o
+[3.531s] [  2%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/kick_parameters__functions.c.o
+[3.531s] [  2%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/navigation_config__functions.c.o
+[3.536s] [  5%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/robot_target__functions.c.o
+[3.536s] [  5%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/behavior_status__functions.c.o
+[3.536s] [  5%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/path_preview__functions.c.o
+[3.536s] [  5%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/robot_state__functions.c.o
+[3.537s] [  5%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/pose2_d__functions.c.o
+[3.537s] [  6%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/team_color__functions.c.o
+[3.537s] [  6%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/team_network_config__functions.c.o
+[3.539s] [  6%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/prepare_kickoff_parameters__functions.c.o
+[3.540s] [  6%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/twist2_d__functions.c.o
+[3.647s] [  6%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/vision_geometry__functions.c.o
+[3.647s] [  8%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/get_navigation_config__functions.c.o
+[3.647s] [  8%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/world_state__functions.c.o
+[3.648s] [  9%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/send_replacement_ball__functions.c.o
+[3.655s] [  9%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/msg/detail/vision_detection__functions.c.o
+[3.655s] [  9%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/save_config__functions.c.o
+[3.655s] [  9%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/load_config__functions.c.o
+[3.655s] [  9%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/send_robot_command__functions.c.o
+[3.660s] [ 10%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/set_kick_parameters__functions.c.o
+[3.665s] [ 10%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/send_replacement_robot__functions.c.o
+[3.678s] [ 10%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/set_navigation_config__functions.c.o
+[3.718s] [ 11%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/set_prepare_kickoff_parameters__functions.c.o
+[3.718s] [ 11%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/set_team_network__functions.c.o
+[3.724s] [ 11%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/set_replacement_network__functions.c.o
+[3.745s] [ 11%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/action/detail/run_behavior__functions.c.o
+[3.751s] [ 12%] Building C object CMakeFiles/interface_package__rosidl_generator_c.dir/rosidl_generator_c/interface_package/srv/detail/set_team__functions.c.o
+[3.923s] [ 12%] Built target interface_package__cpp
+[3.934s] [ 13%] Generating C++ type support dispatch for ROS interfaces
+[3.936s] [ 15%] Generating C++ introspection for ROS interfaces
+[3.937s] [ 15%] Generating C++ type support for eProsima Fast-RTPS
+[3.978s] [ 15%] Linking C shared library libinterface_package__rosidl_generator_c.so
+[4.029s] [ 15%] Built target interface_package__rosidl_generator_c
+[4.040s] [ 17%] Generating C type support dispatch for ROS interfaces
+[4.040s] [ 16%] Generating C introspection for ROS interfaces
+[4.044s] [ 18%] Generating C type support for eProsima Fast-RTPS
+[5.089s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_cpp
+[5.111s] [ 19%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/behavior_status__type_support.cpp.o
+[5.111s] [ 19%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/behavior_choice__type_support.cpp.o
+[5.111s] [ 19%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/ball_state__type_support.cpp.o
+[5.111s] [ 20%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/kick_parameters__type_support.cpp.o
+[5.112s] [ 20%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/field_dimensions__type_support.cpp.o
+[5.118s] [ 20%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/control_command__type_support.cpp.o
+[5.118s] [ 20%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/path_preview__type_support.cpp.o
+[5.118s] [ 20%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/navigation_config__type_support.cpp.o
+[5.122s] [ 21%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/robot_target__type_support.cpp.o
+[5.122s] [ 22%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/pose2_d__type_support.cpp.o
+[5.126s] [ 21%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/prepare_kickoff_parameters__type_support.cpp.o
+[5.570s] [ 22%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/robot_state__type_support.cpp.o
+[5.579s] [ 22%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/team_color__type_support.cpp.o
+[5.599s] [ 23%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/team_network_config__type_support.cpp.o
+[5.617s] [ 23%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/twist2_d__type_support.cpp.o
+[5.676s] [ 23%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/world_state__type_support.cpp.o
+[5.689s] [ 24%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/vision_detection__type_support.cpp.o
+[5.690s] [ 24%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/msg/vision_geometry__type_support.cpp.o
+[5.749s] [ 25%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/get_navigation_config__type_support.cpp.o
+[5.763s] [ 25%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/load_config__type_support.cpp.o
+[5.771s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_c
+[5.781s] [ 25%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/save_config__type_support.cpp.o
+[5.796s] [ 25%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/ball_state__type_support.cpp.o
+[5.837s] [ 25%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/behavior_choice__type_support.cpp.o
+[5.874s] [ 26%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/behavior_status__type_support.cpp.o
+[5.915s] [ 27%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/send_replacement_ball__type_support.cpp.o
+[5.981s] [ 27%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/control_command__type_support.cpp.o
+[6.041s] [ 27%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/field_dimensions__type_support.cpp.o
+[6.088s] [ 28%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/kick_parameters__type_support.cpp.o
+[6.100s] [ 28%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/send_replacement_robot__type_support.cpp.o
+[6.100s] [ 28%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/navigation_config__type_support.cpp.o
+[6.114s] [ 29%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/path_preview__type_support.cpp.o
+[6.122s] [ 29%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/pose2_d__type_support.cpp.o
+[6.135s] [ 29%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/send_robot_command__type_support.cpp.o
+[6.178s] [ 29%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/prepare_kickoff_parameters__type_support.cpp.o
+[6.195s] [ 30%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/set_kick_parameters__type_support.cpp.o
+[6.201s] [ 31%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/robot_target__type_support.cpp.o
+[6.212s] [ 31%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/robot_state__type_support.cpp.o
+[6.212s] [ 31%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/team_color__type_support.cpp.o
+[6.244s] [ 32%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/team_network_config__type_support.cpp.o
+[6.276s] [ 32%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/set_navigation_config__type_support.cpp.o
+[6.288s] [ 32%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/set_prepare_kickoff_parameters__type_support.cpp.o
+[6.291s] [ 32%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/twist2_d__type_support.cpp.o
+[6.308s] [ 32%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/world_state__type_support.cpp.o
+[6.335s] [ 33%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/set_replacement_network__type_support.cpp.o
+[6.336s] [ 34%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/vision_detection__type_support.cpp.o
+[6.336s] [ 34%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/set_team_network__type_support.cpp.o
+[6.388s] [ 35%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/srv/set_team__type_support.cpp.o
+[6.389s] [ 35%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/msg/vision_geometry__type_support.cpp.o
+[6.411s] [ 35%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_package/action/run_behavior__type_support.cpp.o
+[6.413s] [ 36%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/get_navigation_config__type_support.cpp.o
+[6.454s] [ 36%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/load_config__type_support.cpp.o
+[6.483s] [ 36%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/save_config__type_support.cpp.o
+[6.504s] [ 37%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/send_replacement_ball__type_support.cpp.o
+[6.579s] [ 37%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/send_replacement_robot__type_support.cpp.o
+[6.585s] [ 38%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/set_kick_parameters__type_support.cpp.o
+[6.609s] [ 38%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/send_robot_command__type_support.cpp.o
+[6.619s] [ 38%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/set_navigation_config__type_support.cpp.o
+[6.666s] [ 39%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/set_prepare_kickoff_parameters__type_support.cpp.o
+[6.668s] [ 39%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/set_replacement_network__type_support.cpp.o
+[6.701s] [ 39%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/set_team_network__type_support.cpp.o
+[6.705s] [ 40%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/srv/set_team__type_support.cpp.o
+[6.705s] [ 40%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_package/action/run_behavior__type_support.cpp.o
+[6.806s] [ 40%] Linking CXX shared library libinterface_package__rosidl_typesupport_c.so
+[6.872s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_introspection_cpp
+[6.891s] [ 40%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/ball_state__type_support.cpp.o
+[6.903s] [ 41%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/behavior_status__type_support.cpp.o
+[6.908s] [ 41%] Built target interface_package__rosidl_typesupport_c
+[6.908s] [ 42%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/control_command__type_support.cpp.o
+[6.908s] [ 42%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/field_dimensions__type_support.cpp.o
+[6.909s] [ 42%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/behavior_choice__type_support.cpp.o
+[6.917s] [ 42%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/kick_parameters__type_support.cpp.o
+[6.923s] [ 43%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/path_preview__type_support.cpp.o
+[6.925s] [ 43%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/navigation_config__type_support.cpp.o
+[6.949s] [ 43%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/prepare_kickoff_parameters__type_support.cpp.o
+[6.956s] [ 43%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/pose2_d__type_support.cpp.o
+[6.973s] [ 44%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/robot_target__type_support.cpp.o
+[7.014s] [ 44%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/robot_state__type_support.cpp.o
+[7.014s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_introspection_c
+[7.066s] [ 44%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/ball_state__type_support.c.o
+[7.156s] [ 45%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/behavior_choice__type_support.c.o
+[7.272s] [ 45%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/behavior_status__type_support.c.o
+[7.357s] [ 45%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/control_command__type_support.c.o
+[7.412s] [ 45%] Linking CXX shared library libinterface_package__rosidl_typesupport_cpp.so
+[7.520s] [ 46%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/field_dimensions__type_support.c.o
+[7.562s] [ 46%] Built target interface_package__rosidl_typesupport_cpp
+[7.583s] [ 46%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/kick_parameters__type_support.c.o
+[7.609s] [ 46%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/team_color__type_support.cpp.o
+[7.619s] [ 47%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/team_network_config__type_support.cpp.o
+[7.633s] [ 47%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/navigation_config__type_support.c.o
+[7.658s] [ 47%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/twist2_d__type_support.cpp.o
+[7.660s] [ 48%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/world_state__type_support.cpp.o
+[7.682s] [ 49%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/path_preview__type_support.c.o
+[7.686s] [ 49%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/vision_geometry__type_support.cpp.o
+[7.693s] [ 49%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/msg/detail/vision_detection__type_support.cpp.o
+[7.702s] [ 50%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/get_navigation_config__type_support.cpp.o
+[7.738s] [ 50%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/load_config__type_support.cpp.o
+[7.743s] [ 50%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/pose2_d__type_support.c.o
+[7.776s] [ 50%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/prepare_kickoff_parameters__type_support.c.o
+[7.818s] [ 50%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/save_config__type_support.cpp.o
+[7.836s] [ 51%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/robot_target__type_support.c.o
+[7.849s] [ 51%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/robot_state__type_support.c.o
+[7.862s] [ 52%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/team_color__type_support.c.o
+[7.898s] [ 53%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/send_replacement_ball__type_support.cpp.o
+[7.913s] [ 53%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/team_network_config__type_support.c.o
+[7.930s] [ 53%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/send_replacement_robot__type_support.cpp.o
+[7.947s] [ 54%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/send_robot_command__type_support.cpp.o
+[7.988s] [ 54%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/twist2_d__type_support.c.o
+[8.033s] [ 54%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/set_kick_parameters__type_support.cpp.o
+[8.092s] [ 55%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/world_state__type_support.c.o
+[8.245s] [ 55%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/vision_detection__type_support.c.o
+[8.374s] [ 55%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/msg/detail/vision_geometry__type_support.c.o
+[8.381s] [ 55%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/set_navigation_config__type_support.cpp.o
+[8.432s] [ 56%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/set_prepare_kickoff_parameters__type_support.cpp.o
+[8.434s] [ 57%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/get_navigation_config__type_support.c.o
+[8.449s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_fastrtps_cpp
+[8.469s] [ 57%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/set_replacement_network__type_support.cpp.o
+[8.476s] [ 57%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/load_config__type_support.c.o
+[8.512s] [ 57%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/ball_state__type_support.cpp.o
+[8.550s] [ 58%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/save_config__type_support.c.o
+[8.562s] [ 58%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/behavior_choice__type_support.cpp.o
+[8.593s] [ 59%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/behavior_status__type_support.cpp.o
+[8.621s] [ 59%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/set_team_network__type_support.cpp.o
+[8.653s] [ 59%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/control_command__type_support.cpp.o
+[8.653s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_fastrtps_c
+[8.669s] [ 59%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/send_replacement_ball__type_support.c.o
+[8.672s] [ 59%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/send_replacement_robot__type_support.c.o
+[8.720s] [ 59%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/ball_state__type_support_c.cpp.o
+[8.753s] [ 59%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/field_dimensions__type_support.cpp.o
+[8.753s] [ 60%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/send_robot_command__type_support.c.o
+[8.781s] [ 60%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/behavior_choice__type_support_c.cpp.o
+[8.792s] [ 61%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/kick_parameters__type_support.cpp.o
+[8.829s] [ 62%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/srv/detail/set_team__type_support.cpp.o
+[8.840s] [ 62%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/set_kick_parameters__type_support.c.o
+[8.856s] [ 63%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/behavior_status__type_support_c.cpp.o
+[8.858s] [ 63%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/navigation_config__type_support.cpp.o
+[8.912s] [ 63%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/set_navigation_config__type_support.c.o
+[8.976s] [ 64%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/set_prepare_kickoff_parameters__type_support.c.o
+[9.040s] [ 64%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/set_replacement_network__type_support.c.o
+[9.099s] [ 64%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/set_team_network__type_support.c.o
+[9.162s] [ 65%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/srv/detail/set_team__type_support.c.o
+[9.228s] [ 65%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_package/action/detail/run_behavior__type_support.c.o
+[9.238s] [ 66%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/path_preview__type_support.cpp.o
+[9.247s] [ 66%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_package/action/detail/run_behavior__type_support.cpp.o
+[9.319s] [ 67%] Linking C shared library libinterface_package__rosidl_typesupport_introspection_c.so
+[9.376s] [ 67%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/control_command__type_support_c.cpp.o
+[9.397s] [ 67%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/kick_parameters__type_support_c.cpp.o
+[9.400s] [ 68%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/field_dimensions__type_support_c.cpp.o
+[9.426s] [ 68%] Built target interface_package__rosidl_typesupport_introspection_c
+[9.444s] [ 68%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/navigation_config__type_support_c.cpp.o
+[9.444s] [ 68%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o
+[9.450s] [ 68%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/prepare_kickoff_parameters__type_support.cpp.o
+[9.459s] [ 69%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/path_preview__type_support_c.cpp.o
+[9.476s] [ 69%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/pose2_d__type_support_c.cpp.o
+[9.489s] [ 70%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/robot_target__type_support.cpp.o
+[9.565s] [ 70%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/prepare_kickoff_parameters__type_support_c.cpp.o
+[9.586s] [ 70%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/robot_state__type_support.cpp.o
+[9.635s] [ 71%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/robot_target__type_support_c.cpp.o
+[9.756s] [ 71%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/robot_state__type_support_c.cpp.o
+[9.820s] [ 71%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/team_color__type_support.cpp.o
+[10.147s] [ 71%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/team_color__type_support_c.cpp.o
+[10.174s] [ 72%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/team_network_config__type_support_c.cpp.o
+[10.221s] [ 73%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/team_network_config__type_support.cpp.o
+[10.280s] [ 73%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/twist2_d__type_support_c.cpp.o
+[10.284s] [ 73%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/twist2_d__type_support.cpp.o
+[10.310s] [ 74%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/world_state__type_support_c.cpp.o
+[10.313s] [ 75%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/world_state__type_support.cpp.o
+[10.326s] [ 75%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/vision_geometry__type_support_c.cpp.o
+[10.326s] [ 75%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/msg/detail/vision_detection__type_support_c.cpp.o
+[10.333s] [ 75%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/vision_geometry__type_support.cpp.o
+[10.334s] [ 75%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/msg/detail/dds_fastrtps/vision_detection__type_support.cpp.o
+[10.343s] [ 76%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/get_navigation_config__type_support_c.cpp.o
+[10.456s] [ 77%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/get_navigation_config__type_support.cpp.o
+[10.472s] [ 77%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/load_config__type_support_c.cpp.o
+[10.598s] [ 78%] Linking CXX shared library libinterface_package__rosidl_typesupport_introspection_cpp.so
+[10.815s] [ 78%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/load_config__type_support.cpp.o
+[10.923s] [ 78%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/save_config__type_support.cpp.o
+[10.965s] [ 78%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/save_config__type_support_c.cpp.o
+[10.969s] [ 79%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/send_replacement_ball__type_support.cpp.o
+[10.969s] [ 79%] Built target interface_package__rosidl_typesupport_introspection_cpp
+[10.988s] [ 79%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/send_replacement_robot__type_support.cpp.o
+[11.002s] [ 79%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/send_robot_command__type_support.cpp.o
+[11.002s] [ 80%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/send_replacement_ball__type_support_c.cpp.o
+[11.158s] [ 80%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/send_replacement_robot__type_support_c.cpp.o
+[11.243s] [ 81%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/set_kick_parameters__type_support.cpp.o
+[11.243s] [ 81%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/set_navigation_config__type_support.cpp.o
+[11.289s] [ 82%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/set_prepare_kickoff_parameters__type_support.cpp.o
+[11.331s] [ 82%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/set_replacement_network__type_support.cpp.o
+[11.349s] [ 83%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/send_robot_command__type_support_c.cpp.o
+[11.425s] [ 83%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/set_team_network__type_support.cpp.o
+[11.484s] [ 83%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/set_kick_parameters__type_support_c.cpp.o
+[11.499s] [ 83%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/set_navigation_config__type_support_c.cpp.o
+[11.786s] [ 84%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/set_prepare_kickoff_parameters__type_support_c.cpp.o
+[11.789s] [ 85%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/srv/detail/dds_fastrtps/set_team__type_support.cpp.o
+[11.807s] [ 85%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_package/action/detail/dds_fastrtps/run_behavior__type_support.cpp.o
+[11.857s] [ 85%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/set_replacement_network__type_support_c.cpp.o
+[11.975s] [ 85%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/set_team_network__type_support_c.cpp.o
+[12.076s] [ 86%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/srv/detail/set_team__type_support_c.cpp.o
+[12.084s] [ 86%] Building CXX object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_package/action/detail/run_behavior__type_support_c.cpp.o
+[12.656s] [ 86%] Linking CXX shared library libinterface_package__rosidl_typesupport_fastrtps_cpp.so
+[12.656s] [ 86%] Linking CXX shared library libinterface_package__rosidl_typesupport_fastrtps_c.so
+[12.742s] [ 86%] Built target interface_package__rosidl_typesupport_fastrtps_c
+[12.743s] [ 86%] Built target interface_package__rosidl_typesupport_fastrtps_cpp
+[12.763s] [ 86%] Built target interface_package
+[12.780s] [ 86%] Generating Python code for ROS interfaces
+[15.519s] [ 86%] Built target interface_package__py
+[15.548s] Consolidate compiler generated dependencies of target interface_package__rosidl_generator_py
+[15.569s] [ 87%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_field_dimensions_s.c.o
+[15.569s] [ 87%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_kick_parameters_s.c.o
+[15.569s] [ 87%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_path_preview_s.c.o
+[15.570s] [ 88%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_prepare_kickoff_parameters_s.c.o
+[15.570s] [ 87%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_control_command_s.c.o
+[15.570s] [ 90%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_team_network_config_s.c.o
+[15.570s] [ 91%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_behavior_status_s.c.o
+[15.572s] [ 91%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_behavior_choice_s.c.o
+[15.572s] [ 88%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_robot_target_s.c.o
+[15.572s] [ 92%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_ball_state_s.c.o
+[15.572s] [ 88%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_navigation_config_s.c.o
+[15.572s] [ 92%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_pose2_d_s.c.o
+[15.572s] [ 88%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_team_color_s.c.o
+[15.572s] [ 92%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_robot_state_s.c.o
+[15.573s] [ 92%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_world_state_s.c.o
+[15.574s] [ 92%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_twist2_d_s.c.o
+[15.772s] [ 93%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_vision_detection_s.c.o
+[15.776s] [ 93%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/msg/_vision_geometry_s.c.o
+[15.778s] [ 93%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_get_navigation_config_s.c.o
+[15.781s] [ 95%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_set_kick_parameters_s.c.o
+[15.781s] [ 95%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_save_config_s.c.o
+[15.781s] [ 95%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_load_config_s.c.o
+[15.782s] [ 96%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_send_replacement_ball_s.c.o
+[15.783s] [ 95%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_send_robot_command_s.c.o
+[15.785s] [ 96%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_send_replacement_robot_s.c.o
+[15.792s] [ 96%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_set_prepare_kickoff_parameters_s.c.o
+[15.792s] [ 96%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_set_navigation_config_s.c.o
+[15.792s] [ 97%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_set_replacement_network_s.c.o
+[15.804s] [ 97%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_set_team_network_s.c.o
+[15.806s] [ 98%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/action/_run_behavior_s.c.o
+[15.807s] [ 98%] Building C object CMakeFiles/interface_package__rosidl_generator_py.dir/rosidl_generator_py/interface_package/srv/_set_team_s.c.o
+[16.011s] [ 98%] Linking C shared library rosidl_generator_py/interface_package/libinterface_package__rosidl_generator_py.so
+[16.055s] [ 98%] Built target interface_package__rosidl_generator_py
+[16.068s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_introspection_c__pyext
+[16.070s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_fastrtps_c__pyext
+[16.072s] Consolidate compiler generated dependencies of target interface_package__rosidl_typesupport_c__pyext
+[16.079s] [ 98%] Building C object CMakeFiles/interface_package__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interface_package/_interface_package_s.ep.rosidl_typesupport_introspection_c.c.o
+[16.082s] [ 99%] Building C object CMakeFiles/interface_package__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interface_package/_interface_package_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[16.086s] [100%] Building C object CMakeFiles/interface_package__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interface_package/_interface_package_s.ep.rosidl_typesupport_c.c.o
+[16.297s] [100%] Linking C shared library rosidl_generator_py/interface_package/interface_package_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.312s] [100%] Linking C shared library rosidl_generator_py/interface_package/interface_package_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.322s] [100%] Linking C shared library rosidl_generator_py/interface_package/interface_package_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.351s] [100%] Built target interface_package__rosidl_typesupport_fastrtps_c__pyext
+[16.361s] [100%] Built target interface_package__rosidl_typesupport_c__pyext
+[16.366s] [100%] Built target interface_package__rosidl_typesupport_introspection_c__pyext
+[16.378s] Invoked command in '/home/thxssio/robotics_framework/build/interface_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thxssio/robotics_framework/build/interface_package -- -j16 -l16
+[16.387s] Invoking command in '/home/thxssio/robotics_framework/build/interface_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thxssio/robotics_framework/build/interface_package
+[16.395s] -- Install configuration: ""
+[16.395s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/ament_index/resource_index/rosidl_interfaces/interface_package
+[16.395s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package
+[16.395s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv
+[16.395s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_kick_parameters.h
+[16.395s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/save_config.h
+[16.395s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/load_config.h
+[16.395s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/send_replacement_robot.h
+[16.396s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_team_network.h
+[16.396s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/send_robot_command.h
+[16.396s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/get_navigation_config.h
+[16.397s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_team.h
+[16.397s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail
+[16.397s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__functions.c
+[16.397s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__functions.h
+[16.398s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__functions.h
+[16.398s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__struct.h
+[16.398s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__type_support.h
+[16.398s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__struct.h
+[16.398s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__type_support.h
+[16.398s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__type_support.h
+[16.398s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__functions.c
+[16.398s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__type_support.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__type_support.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__functions.c
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__type_support.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__functions.c
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__functions.c
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__type_support.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__struct.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__functions.c
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__functions.c
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__struct.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__struct.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__functions.c
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__struct.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__functions.c
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__struct.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__struct.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__type_support.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__struct.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__type_support.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__type_support.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__functions.h
+[16.399s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__struct.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__struct.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__type_support.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__type_support.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__functions.c
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__functions.c
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__functions.c
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__struct.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_prepare_kickoff_parameters.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/send_replacement_ball.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_navigation_config.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_replacement_network.h
+[16.400s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action
+[16.400s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__functions.c
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__struct.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__type_support.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__functions.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/run_behavior.h
+[16.400s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/behavior_status.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/behavior_choice.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/control_command.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/team_network_config.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/prepare_kickoff_parameters.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/kick_parameters.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/team_color.h
+[16.400s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/path_preview.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/field_dimensions.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/world_state.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_state.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/ball_state.h
+[16.401s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__functions.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__functions.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__functions.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__struct.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__functions.c
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__functions.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__functions.h
+[16.401s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__functions.c
+[16.402s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__functions.c
+[16.402s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__type_support.h
+[16.402s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__type_support.h
+[16.402s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__functions.c
+[16.402s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__struct.h
+[16.402s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__type_support.h
+[16.402s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__struct.h
+[16.402s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__functions.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__struct.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__type_support.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__functions.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__struct.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__struct.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__struct.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__functions.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__struct.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__struct.h
+[16.403s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__type_support.h
+[16.404s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__type_support.h
+[16.404s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__type_support.h
+[16.404s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__functions.c
+[16.404s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__functions.h
+[16.404s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__struct.h
+[16.404s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__type_support.h
+[16.404s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__functions.c
+[16.404s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__struct.h
+[16.405s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__functions.c
+[16.405s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__functions.h
+[16.405s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__struct.h
+[16.405s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__functions.c
+[16.405s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__type_support.h
+[16.405s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__type_support.h
+[16.405s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__type_support.h
+[16.405s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__struct.h
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__functions.h
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__struct.h
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__type_support.h
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__type_support.h
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__functions.c
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__functions.h
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__functions.c
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__functions.h
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__type_support.h
+[16.406s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__functions.c
+[16.407s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__functions.c
+[16.407s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__type_support.h
+[16.407s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__functions.c
+[16.407s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__functions.c
+[16.408s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__type_support.h
+[16.408s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__functions.h
+[16.408s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__functions.h
+[16.408s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__functions.c
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__struct.h
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__functions.c
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__functions.c
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__struct.h
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__functions.c
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__struct.h
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__type_support.h
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__type_support.h
+[16.409s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__struct.h
+[16.410s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__functions.h
+[16.410s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__functions.h
+[16.410s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__functions.h
+[16.410s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/pose2_d.h
+[16.410s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_target.h
+[16.410s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/navigation_config.h
+[16.410s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/vision_detection.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/twist2_d.h
+[16.411s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/rosidl_generator_c__visibility_control.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/vision_geometry.h
+[16.411s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/environment/library_path.sh
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/environment/library_path.dsv
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_generator_c.so
+[16.411s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_generator_c.so" to ""
+[16.411s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package
+[16.411s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv
+[16.411s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__rosidl_typesupport_fastrtps_c.h
+[16.411s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action
+[16.412s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg
+[16.412s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.412s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__rosidl_typesupport_fastrtps_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_fastrtps_c.so
+[16.412s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_fastrtps_c.so" to ""
+[16.412s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package
+[16.412s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv
+[16.412s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__rosidl_typesupport_introspection_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__rosidl_typesupport_introspection_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__type_support.c
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__rosidl_typesupport_introspection_c.h
+[16.412s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__type_support.c
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__type_support.c
+[16.413s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action
+[16.413s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__rosidl_typesupport_introspection_c.h
+[16.413s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__type_support.c
+[16.413s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg
+[16.413s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[16.413s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__type_support.c
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__rosidl_typesupport_introspection_c.h
+[16.414s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__type_support.c
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__type_support.c
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__type_support.c
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__rosidl_typesupport_introspection_c.h
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__type_support.c
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__type_support.c
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__rosidl_typesupport_introspection_c.h
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__rosidl_typesupport_introspection_c.h
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__rosidl_typesupport_introspection_c.h
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__rosidl_typesupport_introspection_c.h
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__rosidl_typesupport_introspection_c.h
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__type_support.c
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__type_support.c
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__rosidl_typesupport_introspection_c.h
+[16.415s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_introspection_c.so
+[16.416s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_introspection_c.so" to ""
+[16.416s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_c.so
+[16.416s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_c.so" to ""
+[16.417s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package
+[16.417s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/send_replacement_robot.hpp
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/send_replacement_ball.hpp
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/save_config.hpp
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_prepare_kickoff_parameters.hpp
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_navigation_config.hpp
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/get_navigation_config.hpp
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_kick_parameters.hpp
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_replacement_network.hpp
+[16.417s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_team_network.hpp
+[16.418s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail
+[16.418s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__type_support.hpp
+[16.418s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__traits.hpp
+[16.418s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__traits.hpp
+[16.418s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__traits.hpp
+[16.418s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__struct.hpp
+[16.418s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__type_support.hpp
+[16.418s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__builder.hpp
+[16.418s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__builder.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__type_support.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__builder.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__type_support.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__struct.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__builder.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__type_support.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__struct.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__type_support.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__traits.hpp
+[16.419s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__traits.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__struct.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__builder.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__traits.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__struct.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__traits.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__struct.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__type_support.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__struct.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__traits.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__struct.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__struct.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__builder.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__traits.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__builder.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__traits.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__type_support.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__struct.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__struct.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__traits.hpp
+[16.420s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__type_support.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__type_support.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__builder.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__builder.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__builder.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__type_support.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__builder.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__traits.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__type_support.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__builder.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__struct.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/set_team.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/send_robot_command.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/load_config.hpp
+[16.421s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action
+[16.421s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__traits.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__type_support.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__struct.hpp
+[16.421s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__builder.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/run_behavior.hpp
+[16.422s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/prepare_kickoff_parameters.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_target.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/path_preview.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/behavior_status.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/field_dimensions.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/kick_parameters.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/twist2_d.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/control_command.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/vision_detection.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_state.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/team_network_config.hpp
+[16.422s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/navigation_config.hpp
+[16.423s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/ball_state.hpp
+[16.423s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/rosidl_generator_cpp__visibility_control.hpp
+[16.423s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/vision_geometry.hpp
+[16.423s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/world_state.hpp
+[16.423s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail
+[16.423s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__builder.hpp
+[16.424s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__struct.hpp
+[16.424s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__type_support.hpp
+[16.424s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__builder.hpp
+[16.424s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__traits.hpp
+[16.424s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__builder.hpp
+[16.424s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__struct.hpp
+[16.425s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__struct.hpp
+[16.425s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__traits.hpp
+[16.425s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__struct.hpp
+[16.425s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__type_support.hpp
+[16.425s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__builder.hpp
+[16.425s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__traits.hpp
+[16.425s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__type_support.hpp
+[16.426s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__traits.hpp
+[16.426s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__builder.hpp
+[16.426s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__type_support.hpp
+[16.426s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__builder.hpp
+[16.426s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__type_support.hpp
+[16.426s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__traits.hpp
+[16.426s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__type_support.hpp
+[16.427s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__type_support.hpp
+[16.427s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__traits.hpp
+[16.427s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__struct.hpp
+[16.427s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__builder.hpp
+[16.427s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__builder.hpp
+[16.427s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__struct.hpp
+[16.427s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__struct.hpp
+[16.428s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__builder.hpp
+[16.428s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__type_support.hpp
+[16.428s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__struct.hpp
+[16.428s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__builder.hpp
+[16.428s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__type_support.hpp
+[16.428s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__type_support.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__type_support.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__struct.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__builder.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__type_support.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__struct.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__struct.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__struct.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__traits.hpp
+[16.429s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__builder.hpp
+[16.430s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__type_support.hpp
+[16.430s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__struct.hpp
+[16.430s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__traits.hpp
+[16.430s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__traits.hpp
+[16.430s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__builder.hpp
+[16.430s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__builder.hpp
+[16.430s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__builder.hpp
+[16.431s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__traits.hpp
+[16.431s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__traits.hpp
+[16.431s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__type_support.hpp
+[16.431s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__traits.hpp
+[16.431s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__traits.hpp
+[16.431s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__traits.hpp
+[16.431s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__struct.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__struct.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__builder.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__traits.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__traits.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__builder.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__struct.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__struct.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__traits.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__type_support.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__type_support.hpp
+[16.432s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__struct.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__type_support.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__builder.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__type_support.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__traits.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/pose2_d.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/behavior_choice.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/team_color.hpp
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/dds_fastrtps
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/dds_fastrtps
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail
+[16.433s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/dds_fastrtps
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[16.433s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[16.434s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_fastrtps_cpp.so
+[16.434s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_fastrtps_cpp.so" to ""
+[16.434s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package
+[16.434s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv
+[16.434s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__type_support.cpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__rosidl_typesupport_introspection_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__type_support.cpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__rosidl_typesupport_introspection_cpp.hpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__type_support.cpp
+[16.434s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/get_navigation_config__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_kick_parameters__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/load_config__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_ball__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team_network__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_prepare_kickoff_parameters__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_team__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_replacement_network__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/save_config__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/set_navigation_config__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_replacement_robot__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/srv/detail/send_robot_command__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action
+[16.435s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__type_support.cpp
+[16.435s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/action/detail/run_behavior__rosidl_typesupport_introspection_cpp.hpp
+[16.435s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg
+[16.436s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/prepare_kickoff_parameters__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_network_config__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/team_color__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/kick_parameters__rosidl_typesupport_introspection_cpp.hpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_choice__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__type_support.cpp
+[16.436s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/world_state__type_support.cpp
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/ball_state__rosidl_typesupport_introspection_cpp.hpp
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/field_dimensions__type_support.cpp
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__rosidl_typesupport_introspection_cpp.hpp
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/navigation_config__rosidl_typesupport_introspection_cpp.hpp
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_geometry__rosidl_typesupport_introspection_cpp.hpp
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/behavior_status__type_support.cpp
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/vision_detection__type_support.cpp
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_introspection_cpp.so
+[16.437s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_introspection_cpp.so" to ""
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_cpp.so
+[16.437s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_typesupport_cpp.so" to ""
+[16.437s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/environment/pythonpath.sh
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/environment/pythonpath.dsv
+[16.437s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package-0.0.0-py3.10.egg-info
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package-0.0.0-py3.10.egg-info/dependency_links.txt
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package-0.0.0-py3.10.egg-info/PKG-INFO
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package-0.0.0-py3.10.egg-info/top_level.txt
+[16.437s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package-0.0.0-py3.10.egg-info/SOURCES.txt
+[16.438s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package
+[16.438s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv
+[16.438s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_replacement_robot.py
+[16.438s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_prepare_kickoff_parameters.py
+[16.438s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_team_network.py
+[16.438s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_save_config_s.c
+[16.438s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_replacement_ball.py
+[16.438s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_replacement_network.py
+[16.438s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_replacement_ball_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_get_navigation_config_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_get_navigation_config.py
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_replacement_robot_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_load_config_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_navigation_config_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_robot_command_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_kick_parameters_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_load_config.py
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_team_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_team_network_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_save_config.py
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_replacement_network_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_prepare_kickoff_parameters_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/__init__.py
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_navigation_config.py
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_robot_command.py
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_team.py
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_kick_parameters.py
+[16.439s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/action
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/action/_run_behavior_s.c
+[16.439s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/action/__init__.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/action/_run_behavior.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/_interface_package_s.ep.rosidl_typesupport_introspection_c.c
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/_interface_package_s.ep.rosidl_typesupport_fastrtps_c.c
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/libinterface_package__rosidl_generator_py.so
+[16.440s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_robot_target_s.c
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_behavior_status.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_team_network_config.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_robot_state.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_twist2_d_s.c
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_kick_parameters.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_world_state_s.c
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_navigation_config_s.c
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_world_state.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_behavior_status_s.c
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_prepare_kickoff_parameters.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_ball_state.py
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_kick_parameters_s.c
+[16.440s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_vision_detection.py
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_navigation_config.py
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_field_dimensions_s.c
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_robot_target.py
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_team_color.py
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_team_color_s.c
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_prepare_kickoff_parameters_s.c
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_vision_detection_s.c
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_vision_geometry_s.c
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_field_dimensions.py
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_path_preview_s.c
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/__init__.py
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_team_network_config_s.c
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_pose2_d_s.c
+[16.441s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_pose2_d.py
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_behavior_choice.py
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_control_command_s.c
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_vision_geometry.py
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_robot_state_s.c
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_twist2_d.py
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_control_command.py
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_behavior_choice_s.c
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_path_preview.py
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_ball_state_s.c
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/__init__.py
+[16.442s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/_interface_package_s.ep.rosidl_typesupport_c.c
+[16.517s] Listing '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package'...
+[16.517s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/__init__.py'...
+[16.518s] Listing '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/action'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/action/__init__.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/action/_run_behavior.py'...
+[16.518s] Listing '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/__init__.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_ball_state.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_behavior_choice.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_behavior_status.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_control_command.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_field_dimensions.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_kick_parameters.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_navigation_config.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_path_preview.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_pose2_d.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_prepare_kickoff_parameters.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_robot_state.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_robot_target.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_team_color.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_team_network_config.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_twist2_d.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_vision_detection.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_vision_geometry.py'...
+[16.518s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/msg/_world_state.py'...
+[16.519s] Listing '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto'...
+[16.519s] Listing '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/__init__.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_get_navigation_config.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_load_config.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_save_config.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_replacement_ball.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_replacement_robot.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_send_robot_command.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_kick_parameters.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_navigation_config.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_prepare_kickoff_parameters.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_replacement_network.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_team.py'...
+[16.519s] Compiling '/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/srv/_set_team_network.py'...
+[16.523s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.523s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[16.523s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.524s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[16.524s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.525s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/interface_package_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[16.525s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_generator_py.so
+[16.526s] -- Set runtime path of "/home/thxssio/robotics_framework/install/interface_package/lib/libinterface_package__rosidl_generator_py.so" to ""
+[16.526s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/BallState.idl
+[16.526s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/BehaviorChoice.idl
+[16.526s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/BehaviorStatus.idl
+[16.526s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/ControlCommand.idl
+[16.526s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/FieldDimensions.idl
+[16.526s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/KickParameters.idl
+[16.526s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/NavigationConfig.idl
+[16.527s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/PathPreview.idl
+[16.527s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/Pose2D.idl
+[16.527s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/PrepareKickoffParameters.idl
+[16.527s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/RobotTarget.idl
+[16.527s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/RobotState.idl
+[16.527s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/TeamColor.idl
+[16.527s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/TeamNetworkConfig.idl
+[16.528s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/Twist2D.idl
+[16.528s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/WorldState.idl
+[16.528s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/VisionDetection.idl
+[16.528s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/VisionGeometry.idl
+[16.528s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/GetNavigationConfig.idl
+[16.528s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/LoadConfig.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SaveConfig.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendReplacementBall.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendReplacementRobot.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendRobotCommand.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetKickParameters.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetNavigationConfig.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetPrepareKickoffParameters.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetReplacementNetwork.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetTeamNetwork.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetTeam.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/action/RunBehavior.idl
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/BallState.msg
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/BehaviorChoice.msg
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/BehaviorStatus.msg
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/ControlCommand.msg
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/FieldDimensions.msg
+[16.529s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/KickParameters.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/NavigationConfig.msg
+[16.530s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/PathPreview.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/Pose2D.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/PrepareKickoffParameters.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/RobotTarget.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/RobotState.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/TeamColor.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/TeamNetworkConfig.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/Twist2D.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/WorldState.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/VisionDetection.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/msg/VisionGeometry.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/GetNavigationConfig.srv
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/GetNavigationConfig_Request.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/GetNavigationConfig_Response.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/LoadConfig.srv
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/LoadConfig_Request.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/LoadConfig_Response.msg
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SaveConfig.srv
+[16.530s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SaveConfig_Request.msg
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SaveConfig_Response.msg
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendReplacementBall.srv
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendReplacementBall_Request.msg
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendReplacementBall_Response.msg
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendReplacementRobot.srv
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendReplacementRobot_Request.msg
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendReplacementRobot_Response.msg
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendRobotCommand.srv
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendRobotCommand_Request.msg
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SendRobotCommand_Response.msg
+[16.531s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetKickParameters.srv
+[16.532s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetKickParameters_Request.msg
+[16.532s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetKickParameters_Response.msg
+[16.532s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetNavigationConfig.srv
+[16.532s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetNavigationConfig_Request.msg
+[16.532s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetNavigationConfig_Response.msg
+[16.532s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetPrepareKickoffParameters.srv
+[16.532s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetPrepareKickoffParameters_Request.msg
+[16.533s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetPrepareKickoffParameters_Response.msg
+[16.533s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetReplacementNetwork.srv
+[16.533s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetReplacementNetwork_Request.msg
+[16.533s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetReplacementNetwork_Response.msg
+[16.534s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetTeamNetwork.srv
+[16.534s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetTeamNetwork_Request.msg
+[16.534s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetTeamNetwork_Response.msg
+[16.534s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetTeam.srv
+[16.534s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetTeam_Request.msg
+[16.534s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/srv/SetTeam_Response.msg
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/action/RunBehavior.action
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/grSim_Replacement_pb2.py
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/messages_robocup_ssl_detection_tracked_pb2.py
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/messages_robocup_ssl_wrapper_pb2.py
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/messages_robocup_ssl_geometry_pb2.py
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/__init__.py
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/ssl_simulation_robot_control_pb2.py
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/messages_robocup_ssl_detection_pb2.py
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/messages_robocup_ssl_wrapper_tracked_pb2.py
+[16.535s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/grSim_Commands_pb2.py
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages/interface_package/proto/grSim_Packet_pb2.py
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/launch
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/launch/__pycache__
+[16.536s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/launch/__pycache__/bringup.launch.cpython-310.pyc
+[16.536s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/launch/bringup.launch.py
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/ament_index/resource_index/package_run_dependencies/interface_package
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/ament_index/resource_index/parent_prefix_path/interface_package
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/environment/ament_prefix_path.sh
+[16.536s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/environment/ament_prefix_path.dsv
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/environment/path.sh
+[16.536s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/environment/path.dsv
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/local_setup.bash
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/local_setup.sh
+[16.536s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/local_setup.zsh
+[16.537s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/local_setup.dsv
+[16.537s] -- Installing: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.dsv
+[16.537s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/ament_index/resource_index/packages/interface_package
+[16.537s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_generator_cExport.cmake
+[16.537s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_generator_cExport-noconfig.cmake
+[16.537s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_typesupport_fastrtps_cExport.cmake
+[16.537s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[16.537s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_package__rosidl_typesupport_introspection_cExport.cmake
+[16.537s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_package__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[16.538s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_package__rosidl_typesupport_cExport.cmake
+[16.538s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_package__rosidl_typesupport_cExport-noconfig.cmake
+[16.538s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_generator_cppExport.cmake
+[16.538s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_typesupport_fastrtps_cppExport.cmake
+[16.538s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[16.538s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_package__rosidl_typesupport_introspection_cppExport.cmake
+[16.539s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_package__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[16.539s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_package__rosidl_typesupport_cppExport.cmake
+[16.539s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_package__rosidl_typesupport_cppExport-noconfig.cmake
+[16.539s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_generator_pyExport.cmake
+[16.539s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/export_interface_package__rosidl_generator_pyExport-noconfig.cmake
+[16.539s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/rosidl_cmake-extras.cmake
+[16.540s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.540s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.540s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/ament_cmake_export_libraries-extras.cmake
+[16.541s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/ament_cmake_export_targets-extras.cmake
+[16.541s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[16.541s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[16.541s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_packageConfig.cmake
+[16.541s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/cmake/interface_packageConfig-version.cmake
+[16.541s] -- Up-to-date: /home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.xml
+[16.541s] Invoked command in '/home/thxssio/robotics_framework/build/interface_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thxssio/robotics_framework/build/interface_package

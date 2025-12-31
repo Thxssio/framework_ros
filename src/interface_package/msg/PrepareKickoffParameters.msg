@@ -1,0 +1,3 @@
+float64 offset
+float64 approach_tolerance
+float64 heading_tolerance

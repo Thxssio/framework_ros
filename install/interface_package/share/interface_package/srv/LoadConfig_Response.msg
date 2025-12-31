@@ -1,0 +1,6 @@
+
+bool ok
+string message
+interface_package/NavigationConfig nav
+interface_package/KickParameters kick
+interface_package/PrepareKickoffParameters prep

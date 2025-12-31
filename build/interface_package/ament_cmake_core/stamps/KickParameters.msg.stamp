@@ -1,0 +1,6 @@
+float64 kick_speed
+float64 kick_angle_deg
+float64 kick_distance
+float64 facing_tolerance
+float64 kick_push_speed
+float64 dribbler_rpm

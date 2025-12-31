@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/SetKickParameters.srv
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/KickParameters.idl"
+
+module interface_package {
+  module srv {
+    struct SetKickParameters_Request {
+      interface_package::msg::KickParameters params;
+    };
+    struct SetKickParameters_Response {
+      boolean ok;
+
+      string message;
+    };
+  };
+};

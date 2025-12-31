@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>robot_communication_package</name>
+  <version>0.0.0</version>
+  <description>Python utilities and ROS services to send robot control packets to grSim.</description>
+  <maintainer email="thxssio@gmail.com">thxssio</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>python3</depend>
+  <depend>rclpy</depend>
+  <depend>interface_package</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

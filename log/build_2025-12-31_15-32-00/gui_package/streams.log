@@ -1,0 +1,76 @@
+[0.966s] Invoking command in '/home/thxssio/robotics_framework/src/gui_package': AMENT_PREFIX_PATH=/home/thxssio/robotics_framework/install/behavior_package:/home/thxssio/robotics_framework/install/vision_receiver_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package:/home/thxssio/robotics_framework/install/gui_package:/home/thxssio/robotics_framework/install/interface_package:/opt/ros/humble CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:/home/thxssio/robotics_framework/install/navigation_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/thxssio/robotics_framework/build/gui_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/robot_communication_package/local/lib/python3.10/dist-packages:/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gui_package build --build-base /home/thxssio/robotics_framework/build/gui_package/build install --record /home/thxssio/robotics_framework/build/gui_package/install.log --single-version-externally-managed install_data
+[1.257s] running egg_info
+[1.257s] creating ../../build/gui_package/gui_package.egg-info
+[1.257s] writing ../../build/gui_package/gui_package.egg-info/PKG-INFO
+[1.258s] writing dependency_links to ../../build/gui_package/gui_package.egg-info/dependency_links.txt
+[1.258s] writing entry points to ../../build/gui_package/gui_package.egg-info/entry_points.txt
+[1.258s] writing requirements to ../../build/gui_package/gui_package.egg-info/requires.txt
+[1.258s] writing top-level names to ../../build/gui_package/gui_package.egg-info/top_level.txt
+[1.259s] writing manifest file '../../build/gui_package/gui_package.egg-info/SOURCES.txt'
+[1.262s] reading manifest file '../../build/gui_package/gui_package.egg-info/SOURCES.txt'
+[1.263s] writing manifest file '../../build/gui_package/gui_package.egg-info/SOURCES.txt'
+[1.263s] running build
+[1.263s] running build_py
+[1.263s] creating /home/thxssio/robotics_framework/build/gui_package/build
+[1.263s] creating /home/thxssio/robotics_framework/build/gui_package/build/lib
+[1.264s] creating /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package
+[1.264s] copying gui_package/gui_interface.py -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package
+[1.264s] copying gui_package/field_widget.py -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package
+[1.264s] copying gui_package/world_tf_broadcaster.py -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package
+[1.264s] copying gui_package/__init__.py -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package
+[1.264s] creating /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams
+[1.264s] copying gui_package/teams/standard2010_16.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams
+[1.264s] creating /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue
+[1.264s] copying gui_package/teams/blue/0.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue
+[1.265s] copying gui_package/teams/blue/1.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue
+[1.265s] copying gui_package/teams/blue/2.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue
+[1.265s] copying gui_package/teams/blue/3.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue
+[1.265s] copying gui_package/teams/blue/4.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue
+[1.265s] copying gui_package/teams/blue/5.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue
+[1.265s] creating /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow
+[1.265s] copying gui_package/teams/yellow/0.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow
+[1.265s] copying gui_package/teams/yellow/1.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow
+[1.265s] copying gui_package/teams/yellow/2.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow
+[1.266s] copying gui_package/teams/yellow/3.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow
+[1.266s] copying gui_package/teams/yellow/4.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow
+[1.266s] copying gui_package/teams/yellow/5.png -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow
+[1.266s] running install
+[1.266s] running install_lib
+[1.267s] creating /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package
+[1.268s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/gui_interface.py -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package
+[1.268s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/field_widget.py -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package
+[1.268s] creating /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams
+[1.268s] creating /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/yellow
+[1.268s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow/0.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/yellow
+[1.268s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow/5.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/yellow
+[1.268s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow/3.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/yellow
+[1.268s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow/2.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/yellow
+[1.269s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow/4.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/yellow
+[1.269s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/yellow/1.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/yellow
+[1.269s] creating /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/blue
+[1.269s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue/0.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/blue
+[1.269s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue/5.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/blue
+[1.269s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue/3.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/blue
+[1.269s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue/2.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/blue
+[1.269s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue/4.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/blue
+[1.270s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/blue/1.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams/blue
+[1.270s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/teams/standard2010_16.png -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/teams
+[1.270s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/world_tf_broadcaster.py -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package
+[1.270s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/__init__.py -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package
+[1.270s] byte-compiling /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/gui_interface.py to gui_interface.cpython-310.pyc
+[1.282s] byte-compiling /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/field_widget.py to field_widget.cpython-310.pyc
+[1.286s] byte-compiling /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/world_tf_broadcaster.py to world_tf_broadcaster.cpython-310.pyc
+[1.290s] byte-compiling /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/__init__.py to __init__.cpython-310.pyc
+[1.290s] running install_data
+[1.290s] creating /home/thxssio/robotics_framework/install/gui_package/share/ament_index
+[1.290s] creating /home/thxssio/robotics_framework/install/gui_package/share/ament_index/resource_index
+[1.290s] creating /home/thxssio/robotics_framework/install/gui_package/share/ament_index/resource_index/packages
+[1.290s] copying resource/gui_package -> /home/thxssio/robotics_framework/install/gui_package/share/ament_index/resource_index/packages
+[1.290s] copying package.xml -> /home/thxssio/robotics_framework/install/gui_package/share/gui_package
+[1.290s] running install_egg_info
+[1.291s] Copying ../../build/gui_package/gui_package.egg-info to /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package-0.0.0-py3.10.egg-info
+[1.296s] running install_scripts
+[1.334s] Installing framework_gui script to /home/thxssio/robotics_framework/install/gui_package/lib/gui_package
+[1.334s] Installing world_tf_broadcaster script to /home/thxssio/robotics_framework/install/gui_package/lib/gui_package
+[1.335s] writing list of installed files to '/home/thxssio/robotics_framework/build/gui_package/install.log'
+[1.384s] Invoked command in '/home/thxssio/robotics_framework/src/gui_package' returned '0': AMENT_PREFIX_PATH=/home/thxssio/robotics_framework/install/behavior_package:/home/thxssio/robotics_framework/install/vision_receiver_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package:/home/thxssio/robotics_framework/install/gui_package:/home/thxssio/robotics_framework/install/interface_package:/opt/ros/humble CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:/home/thxssio/robotics_framework/install/navigation_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/thxssio/robotics_framework/build/gui_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/robot_communication_package/local/lib/python3.10/dist-packages:/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gui_package build --build-base /home/thxssio/robotics_framework/build/gui_package/build install --record /home/thxssio/robotics_framework/build/gui_package/install.log --single-version-externally-managed install_data

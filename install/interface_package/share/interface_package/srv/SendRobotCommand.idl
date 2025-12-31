@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/SendRobotCommand.srv
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/ControlCommand.idl"
+
+module interface_package {
+  module srv {
+    struct SendRobotCommand_Request {
+      uint32 robot_id;
+
+      interface_package::msg::ControlCommand command;
+    };
+    struct SendRobotCommand_Response {
+      boolean ok;
+
+      string message;
+    };
+  };
+};

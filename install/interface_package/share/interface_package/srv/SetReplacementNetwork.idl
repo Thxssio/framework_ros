@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/SetReplacementNetwork.srv
+// generated code does not contain a copyright notice
+
+
+module interface_package {
+  module srv {
+    struct SetReplacementNetwork_Request {
+      string host;
+
+      uint16 port;
+    };
+    struct SetReplacementNetwork_Response {
+      boolean ok;
+
+      string message;
+    };
+  };
+};

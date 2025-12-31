@@ -1,0 +1,4 @@
+[console_scripts]
+framework = gui_package.gui_interface:main
+world_tf_broadcaster = gui_package.world_tf_broadcaster:main
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnavigation_module.a CMakeFiles/navigation_module.dir/src/navigation_module.cpp.o CMakeFiles/navigation_module.dir/src/path_planner.cpp.o CMakeFiles/navigation_module.dir/src/trajectory_optimizer.cpp.o
+/usr/bin/ranlib libnavigation_module.a

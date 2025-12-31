@@ -1,0 +1,12 @@
+from interface_package.srv._get_navigation_config import GetNavigationConfig  # noqa: F401
+from interface_package.srv._load_config import LoadConfig  # noqa: F401
+from interface_package.srv._save_config import SaveConfig  # noqa: F401
+from interface_package.srv._send_replacement_ball import SendReplacementBall  # noqa: F401
+from interface_package.srv._send_replacement_robot import SendReplacementRobot  # noqa: F401
+from interface_package.srv._send_robot_command import SendRobotCommand  # noqa: F401
+from interface_package.srv._set_kick_parameters import SetKickParameters  # noqa: F401
+from interface_package.srv._set_navigation_config import SetNavigationConfig  # noqa: F401
+from interface_package.srv._set_prepare_kickoff_parameters import SetPrepareKickoffParameters  # noqa: F401
+from interface_package.srv._set_replacement_network import SetReplacementNetwork  # noqa: F401
+from interface_package.srv._set_team import SetTeam  # noqa: F401
+from interface_package.srv._set_team_network import SetTeamNetwork  # noqa: F401

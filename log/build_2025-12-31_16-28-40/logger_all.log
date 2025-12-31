@@ -1,0 +1,314 @@
+[0.225s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'interface_package', 'behavior_package', 'gui_package', 'navigation_package']
+[0.225s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['interface_package', 'behavior_package', 'gui_package', 'navigation_package'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x774af7f6e290>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x774af809b3a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x774af809b3a0>>, mixin_verb=('build',))
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.659s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/thxssio/robotics_framework'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extensions ['ignore', 'ignore_ament_install']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extension 'ignore'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extension 'ignore_ament_install'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extensions ['colcon_pkg']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extension 'colcon_pkg'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extensions ['colcon_meta']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extension 'colcon_meta'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extensions ['ros']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_package) by extension 'ros'
+[0.709s] DEBUG:colcon.colcon_core.package_identification:Package 'src/behavior_package' with type 'ros.ament_python' and name 'behavior_package'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extension 'ignore_ament_install'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extensions ['colcon_pkg']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extension 'colcon_pkg'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extensions ['colcon_meta']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extension 'colcon_meta'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extensions ['ros']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui_package) by extension 'ros'
+[0.712s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gui_package' with type 'ros.ament_python' and name 'gui_package'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extensions ['ignore', 'ignore_ament_install']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extension 'ignore'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extension 'ignore_ament_install'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extensions ['colcon_pkg']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extension 'colcon_pkg'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extensions ['colcon_meta']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extension 'colcon_meta'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extensions ['ros']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/interface_package) by extension 'ros'
+[0.714s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interface_package' with type 'ros.ament_cmake' and name 'interface_package'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extensions ['ignore', 'ignore_ament_install']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'ignore'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'ignore_ament_install'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extensions ['colcon_pkg']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'colcon_pkg'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extensions ['colcon_meta']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'colcon_meta'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extensions ['ros']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'ros'
+[0.716s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation_package' with type 'ros.ament_cmake' and name 'navigation_package'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extensions ['ignore', 'ignore_ament_install']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extension 'ignore'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extension 'ignore_ament_install'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extensions ['colcon_pkg']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extension 'colcon_pkg'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extensions ['colcon_meta']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extension 'colcon_meta'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extensions ['ros']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication_package) by extension 'ros'
+[0.719s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_communication_package' with type 'ros.ament_cmake' and name 'robot_communication_package'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extensions ['ignore', 'ignore_ament_install']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extension 'ignore'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extension 'ignore_ament_install'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extensions ['colcon_pkg']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extension 'colcon_pkg'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extensions ['colcon_meta']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extension 'colcon_meta'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extensions ['ros']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_receiver_package) by extension 'ros'
+[0.721s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_receiver_package' with type 'ros.ament_python' and name 'vision_receiver_package'
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.746s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robot_communication_package' in 'src/robot_communication_package'
+[0.746s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vision_receiver_package' in 'src/vision_receiver_package'
+[0.747s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.747s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.749s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 277 installed packages in /opt/ros/humble
+[0.750s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'cmake_args' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'cmake_target' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'behavior_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.773s] DEBUG:colcon.colcon_core.verb:Building package 'behavior_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thxssio/robotics_framework/build/behavior_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thxssio/robotics_framework/install/behavior_package', 'merge_install': False, 'path': '/home/thxssio/robotics_framework/src/behavior_package', 'symlink_install': False, 'test_result_base': None}
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'cmake_target' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'interface_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.774s] DEBUG:colcon.colcon_core.verb:Building package 'interface_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thxssio/robotics_framework/build/interface_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thxssio/robotics_framework/install/interface_package', 'merge_install': False, 'path': '/home/thxssio/robotics_framework/src/interface_package', 'symlink_install': False, 'test_result_base': None}
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'cmake_target' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'gui_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.774s] DEBUG:colcon.colcon_core.verb:Building package 'gui_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thxssio/robotics_framework/build/gui_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thxssio/robotics_framework/install/gui_package', 'merge_install': False, 'path': '/home/thxssio/robotics_framework/src/gui_package', 'symlink_install': False, 'test_result_base': None}
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_target' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.775s] DEBUG:colcon.colcon_core.verb:Building package 'navigation_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thxssio/robotics_framework/build/navigation_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thxssio/robotics_framework/install/navigation_package', 'merge_install': False, 'path': '/home/thxssio/robotics_framework/src/navigation_package', 'symlink_install': False, 'test_result_base': None}
+[0.775s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.776s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.776s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thxssio/robotics_framework/src/interface_package' with build type 'ament_cmake'
+[0.776s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thxssio/robotics_framework/src/interface_package'
+[0.777s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.778s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.778s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.781s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/thxssio/robotics_framework/src/behavior_package' with build type 'ament_python'
+[0.782s] Level 1:colcon.colcon_core.shell:create_environment_hook('behavior_package', 'ament_prefix_path')
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/hook/ament_prefix_path.ps1'
+[0.784s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/hook/ament_prefix_path.dsv'
+[0.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/hook/ament_prefix_path.sh'
+[0.785s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.785s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thxssio/robotics_framework/build/interface_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thxssio/robotics_framework/build/interface_package -- -j16 -l16
+[1.070s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/thxssio/robotics_framework/src/behavior_package'
+[1.070s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.070s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thxssio/robotics_framework/src/behavior_package': PYTHONPATH=/home/thxssio/robotics_framework/build/behavior_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/behavior_package build --build-base /home/thxssio/robotics_framework/build/behavior_package/build install --record /home/thxssio/robotics_framework/build/behavior_package/install.log --single-version-externally-managed install_data
+[1.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thxssio/robotics_framework/src/behavior_package' returned '0': PYTHONPATH=/home/thxssio/robotics_framework/build/behavior_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/behavior_package build --build-base /home/thxssio/robotics_framework/build/behavior_package/build install --record /home/thxssio/robotics_framework/build/behavior_package/install.log --single-version-externally-managed install_data
+[1.948s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/behavior_package' for CMake module files
+[1.949s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/behavior_package' for CMake config files
+[1.950s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/behavior_package/lib'
+[1.950s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/behavior_package/bin'
+[1.950s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/behavior_package/lib/pkgconfig/behavior_package.pc'
+[1.951s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages'
+[1.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('behavior_package', 'pythonpath')
+[1.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/hook/pythonpath.ps1'
+[1.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/hook/pythonpath.dsv'
+[1.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/hook/pythonpath.sh'
+[1.953s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/behavior_package/bin'
+[1.953s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behavior_package)
+[1.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/package.ps1'
+[1.955s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/package.dsv'
+[1.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/package.sh'
+[1.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/package.bash'
+[1.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/behavior_package/share/behavior_package/package.zsh'
+[1.959s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thxssio/robotics_framework/install/behavior_package/share/colcon-core/packages/behavior_package)
+[17.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thxssio/robotics_framework/build/interface_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thxssio/robotics_framework/build/interface_package -- -j16 -l16
+[17.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thxssio/robotics_framework/build/interface_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thxssio/robotics_framework/build/interface_package
+[18.007s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interface_package)
+[18.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thxssio/robotics_framework/build/interface_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thxssio/robotics_framework/build/interface_package
+[18.007s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package' for CMake module files
+[18.008s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package' for CMake config files
+[18.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface_package', 'cmake_prefix_path')
+[18.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/cmake_prefix_path.ps1'
+[18.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/cmake_prefix_path.dsv'
+[18.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/cmake_prefix_path.sh'
+[18.012s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/lib'
+[18.012s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface_package', 'ld_library_path_lib')
+[18.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/ld_library_path_lib.ps1'
+[18.012s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/ld_library_path_lib.dsv'
+[18.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/ld_library_path_lib.sh'
+[18.013s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/bin'
+[18.013s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/lib/pkgconfig/interface_package.pc'
+[18.013s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/lib/python3.10/site-packages'
+[18.013s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/bin'
+[18.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.ps1'
+[18.014s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.dsv'
+[18.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.sh'
+[18.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.bash'
+[18.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.zsh'
+[18.016s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thxssio/robotics_framework/install/interface_package/share/colcon-core/packages/interface_package)
+[18.016s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interface_package)
+[18.016s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package' for CMake module files
+[18.017s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package' for CMake config files
+[18.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface_package', 'cmake_prefix_path')
+[18.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/cmake_prefix_path.ps1'
+[18.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/cmake_prefix_path.dsv'
+[18.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/cmake_prefix_path.sh'
+[18.019s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/lib'
+[18.019s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface_package', 'ld_library_path_lib')
+[18.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/ld_library_path_lib.ps1'
+[18.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/ld_library_path_lib.dsv'
+[18.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/hook/ld_library_path_lib.sh'
+[18.019s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/bin'
+[18.019s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/lib/pkgconfig/interface_package.pc'
+[18.020s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/lib/python3.10/site-packages'
+[18.020s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/interface_package/bin'
+[18.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.ps1'
+[18.020s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.dsv'
+[18.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.sh'
+[18.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.bash'
+[18.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/interface_package/share/interface_package/package.zsh'
+[18.021s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thxssio/robotics_framework/install/interface_package/share/colcon-core/packages/interface_package)
+[18.022s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/thxssio/robotics_framework/src/gui_package' with build type 'ament_python'
+[18.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui_package', 'ament_prefix_path')
+[18.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/hook/ament_prefix_path.ps1'
+[18.022s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/hook/ament_prefix_path.dsv'
+[18.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/hook/ament_prefix_path.sh'
+[18.023s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.023s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.025s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thxssio/robotics_framework/src/navigation_package' with build type 'ament_cmake'
+[18.026s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thxssio/robotics_framework/src/navigation_package'
+[18.026s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.026s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thxssio/robotics_framework/build/navigation_package': AMENT_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/opt/ros/humble LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/thxssio/robotics_framework/build/navigation_package -- -j16 -l16
+[18.488s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/thxssio/robotics_framework/src/gui_package'
+[18.489s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.489s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thxssio/robotics_framework/src/gui_package': AMENT_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/behavior_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thxssio/robotics_framework/build/gui_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gui_package build --build-base /home/thxssio/robotics_framework/build/gui_package/build install --record /home/thxssio/robotics_framework/build/gui_package/install.log --single-version-externally-managed install_data
+[19.420s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/gui_package' for CMake module files
+[19.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thxssio/robotics_framework/src/gui_package' returned '0': AMENT_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/behavior_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thxssio/robotics_framework/build/gui_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gui_package build --build-base /home/thxssio/robotics_framework/build/gui_package/build install --record /home/thxssio/robotics_framework/build/gui_package/install.log --single-version-externally-managed install_data
+[19.422s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/gui_package' for CMake config files
+[19.424s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/gui_package/lib'
+[19.424s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/gui_package/bin'
+[19.424s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/gui_package/lib/pkgconfig/gui_package.pc'
+[19.424s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages'
+[19.425s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui_package', 'pythonpath')
+[19.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/hook/pythonpath.ps1'
+[19.426s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/hook/pythonpath.dsv'
+[19.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/hook/pythonpath.sh'
+[19.428s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/gui_package/bin'
+[19.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gui_package)
+[19.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/package.ps1'
+[19.430s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/package.dsv'
+[19.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/package.sh'
+[19.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/package.bash'
+[19.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/gui_package/share/gui_package/package.zsh'
+[19.432s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thxssio/robotics_framework/install/gui_package/share/colcon-core/packages/gui_package)
+[24.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thxssio/robotics_framework/build/navigation_package' returned '2': AMENT_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/opt/ros/humble LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/thxssio/robotics_framework/build/navigation_package -- -j16 -l16
+[24.965s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation_package)
+[24.965s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/navigation_package' for CMake module files
+[24.965s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/navigation_package' for CMake config files
+[24.966s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation_package', 'cmake_prefix_path')
+[24.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/hook/cmake_prefix_path.ps1'
+[24.967s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/hook/cmake_prefix_path.dsv'
+[24.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/hook/cmake_prefix_path.sh'
+[24.967s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/navigation_package/lib'
+[24.967s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/navigation_package/bin'
+[24.968s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/navigation_package/lib/pkgconfig/navigation_package.pc'
+[24.968s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/navigation_package/lib/python3.10/site-packages'
+[24.968s] Level 1:colcon.colcon_core.environment:checking '/home/thxssio/robotics_framework/install/navigation_package/bin'
+[24.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.ps1'
+[24.969s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.dsv'
+[24.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.sh'
+[24.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.bash'
+[24.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.zsh'
+[24.970s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thxssio/robotics_framework/install/navigation_package/share/colcon-core/packages/navigation_package)
+[24.980s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[24.980s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[24.980s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[24.980s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[24.988s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[24.988s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[24.988s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[24.999s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[25.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thxssio/robotics_framework/install/local_setup.ps1'
+[25.001s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/thxssio/robotics_framework/install/_local_setup_util_ps1.py'
+[25.002s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thxssio/robotics_framework/install/setup.ps1'
+[25.003s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thxssio/robotics_framework/install/local_setup.sh'
+[25.003s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/thxssio/robotics_framework/install/_local_setup_util_sh.py'
+[25.004s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thxssio/robotics_framework/install/setup.sh'
+[25.005s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thxssio/robotics_framework/install/local_setup.bash'
+[25.005s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thxssio/robotics_framework/install/setup.bash'
+[25.006s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thxssio/robotics_framework/install/local_setup.zsh'
+[25.006s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thxssio/robotics_framework/install/setup.zsh'

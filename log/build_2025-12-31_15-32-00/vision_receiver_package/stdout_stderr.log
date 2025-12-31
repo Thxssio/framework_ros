@@ -1,0 +1,38 @@
+running egg_info
+creating ../../build/vision_receiver_package/vision_receiver_package.egg-info
+writing ../../build/vision_receiver_package/vision_receiver_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/vision_receiver_package/vision_receiver_package.egg-info/dependency_links.txt
+writing entry points to ../../build/vision_receiver_package/vision_receiver_package.egg-info/entry_points.txt
+writing requirements to ../../build/vision_receiver_package/vision_receiver_package.egg-info/requires.txt
+writing top-level names to ../../build/vision_receiver_package/vision_receiver_package.egg-info/top_level.txt
+writing manifest file '../../build/vision_receiver_package/vision_receiver_package.egg-info/SOURCES.txt'
+reading manifest file '../../build/vision_receiver_package/vision_receiver_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/vision_receiver_package/vision_receiver_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/thxssio/robotics_framework/build/vision_receiver_package/build
+creating /home/thxssio/robotics_framework/build/vision_receiver_package/build/lib
+creating /home/thxssio/robotics_framework/build/vision_receiver_package/build/lib/vision_receiver_package
+copying vision_receiver_package/vision_client.py -> /home/thxssio/robotics_framework/build/vision_receiver_package/build/lib/vision_receiver_package
+copying vision_receiver_package/__init__.py -> /home/thxssio/robotics_framework/build/vision_receiver_package/build/lib/vision_receiver_package
+copying vision_receiver_package/vision_node.py -> /home/thxssio/robotics_framework/build/vision_receiver_package/build/lib/vision_receiver_package
+running install
+running install_lib
+creating /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package
+copying /home/thxssio/robotics_framework/build/vision_receiver_package/build/lib/vision_receiver_package/vision_client.py -> /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package
+copying /home/thxssio/robotics_framework/build/vision_receiver_package/build/lib/vision_receiver_package/__init__.py -> /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package
+copying /home/thxssio/robotics_framework/build/vision_receiver_package/build/lib/vision_receiver_package/vision_node.py -> /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package
+byte-compiling /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package/vision_client.py to vision_client.cpython-310.pyc
+byte-compiling /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package/vision_node.py to vision_node.cpython-310.pyc
+running install_data
+creating /home/thxssio/robotics_framework/install/vision_receiver_package/share/ament_index
+creating /home/thxssio/robotics_framework/install/vision_receiver_package/share/ament_index/resource_index
+creating /home/thxssio/robotics_framework/install/vision_receiver_package/share/ament_index/resource_index/packages
+copying resource/vision_receiver_package -> /home/thxssio/robotics_framework/install/vision_receiver_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/thxssio/robotics_framework/install/vision_receiver_package/share/vision_receiver_package
+running install_egg_info
+Copying ../../build/vision_receiver_package/vision_receiver_package.egg-info to /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing vision_receiver script to /home/thxssio/robotics_framework/install/vision_receiver_package/lib/vision_receiver_package
+writing list of installed files to '/home/thxssio/robotics_framework/build/vision_receiver_package/install.log'

@@ -1,0 +1,9 @@
+uint8 NONE=0
+uint8 GO_TO_BALL=1
+uint8 PREPARE_KICKOFF=2
+uint8 KICKOFF=3
+uint8 GOALKEEPER=4
+uint8 AVOID_BALL=5
+uint8 PATROL_CORNERS=6
+
+uint8 value

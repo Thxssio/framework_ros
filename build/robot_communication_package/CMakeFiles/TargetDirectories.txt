@@ -1,0 +1,12 @@
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/uninstall.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/robot_communication_package_uninstall.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/ament_cmake_python_copy_robot_communication_package.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/ament_cmake_python_copy_robot_communication_package_setup.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/ament_cmake_python_build_robot_communication_package_egg.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/test.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/edit_cache.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/rebuild_cache.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/list_install_components.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/install.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/install/local.dir
+/home/thxssio/robotics_framework/build/robot_communication_package/CMakeFiles/install/strip.dir

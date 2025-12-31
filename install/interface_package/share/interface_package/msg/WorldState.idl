@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interface_package/msg/WorldState.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "interface_package/msg/BallState.idl"
+#include "interface_package/msg/FieldDimensions.idl"
+#include "interface_package/msg/RobotState.idl"
+#include "interface_package/msg/TeamColor.idl"
+
+module interface_package {
+  module msg {
+    struct WorldState {
+      builtin_interfaces::msg::Time stamp;
+
+      double capture_timestamp;
+
+      interface_package::msg::FieldDimensions field;
+
+      sequence<interface_package::msg::RobotState> friendly;
+
+      sequence<interface_package::msg::RobotState> opponent;
+
+      interface_package::msg::BallState ball;
+
+      interface_package::msg::TeamColor friendly_color;
+    };
+  };
+};

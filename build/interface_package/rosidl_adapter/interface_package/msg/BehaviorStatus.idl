@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interface_package/msg/BehaviorStatus.msg
+// generated code does not contain a copyright notice
+
+
+module interface_package {
+  module msg {
+    module BehaviorStatus_Constants {
+      const uint8 RUNNING = 0;
+      const uint8 SUCCESS = 1;
+      const uint8 FAILURE = 2;
+    };
+    struct BehaviorStatus {
+      uint8 value;
+    };
+  };
+};

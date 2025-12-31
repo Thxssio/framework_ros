@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+robot_communication_package/__init__.py
+robot_communication_package/control_client.py
+robot_communication_package/robot_commander_node.py
+robot_communication_package.egg-info/PKG-INFO
+robot_communication_package.egg-info/SOURCES.txt
+robot_communication_package.egg-info/dependency_links.txt
+robot_communication_package.egg-info/top_level.txt

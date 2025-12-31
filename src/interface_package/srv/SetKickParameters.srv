@@ -1,0 +1,4 @@
+interface_package/KickParameters params
+---
+bool ok
+string message

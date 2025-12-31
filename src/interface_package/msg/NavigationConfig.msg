@@ -1,0 +1,16 @@
+float64 stop_distance
+float64 linear_gain
+float64 max_speed
+float64 max_angular_speed
+float64 angular_gain
+float64 planner_resolution
+float64 planner_clearance
+float64 collision_threshold
+float64 optimizer_weight_smooth
+float64 optimizer_weight_jerk
+float64 optimizer_weight_obstacle
+float64 optimizer_step_size
+int32 optimizer_iterations
+float64 optimizer_clearance
+bool force_path_planning
+float64 max_segment_length

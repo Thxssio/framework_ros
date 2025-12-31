@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "interface_package__py",
+		"source" : "/home/thxssio/robotics_framework/build/interface_package/interface_package__py"
+	}
+}

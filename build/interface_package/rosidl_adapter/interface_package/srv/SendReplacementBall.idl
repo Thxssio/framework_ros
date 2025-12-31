@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/SendReplacementBall.srv
+// generated code does not contain a copyright notice
+
+
+module interface_package {
+  module srv {
+    struct SendReplacementBall_Request {
+      double x;
+
+      double y;
+
+      double vx;
+
+      double vy;
+    };
+    struct SendReplacementBall_Response {
+      boolean ok;
+
+      string message;
+    };
+  };
+};

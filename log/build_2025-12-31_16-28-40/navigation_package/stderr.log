@@ -1,0 +1,76 @@
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/thxssio/robotics_framework/src/navigation_package/src/navigation_node.cpp:11:
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘struct rclcpp::function_traits::function_traits<NavigationNode::send_command(uint32_t, const ControlCommand&)::<lambda(auto:40)> >’:
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:165:8:   required from ‘struct rclcpp::function_traits::same_arguments<NavigationNode::send_command(uint32_t, const ControlCommand&)::<lambda(auto:40)>, std::function<void(std::shared_future<std::pair<std::shared_ptr<interface_package::srv::SendRobotCommand_Request_<std::allocator<void> > >, std::shared_ptr<interface_package::srv::SendRobotCommand_Response_<std::allocator<void> > > > >)> >’
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:671:17:   required by substitution of ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<std::shared_ptr<interface_package::srv::SendRobotCommand_Request_<std::allocator<void> > >, std::shared_ptr<interface_package::srv::SendRobotCommand_Response_<std::allocator<void> > > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<interface_package::srv::SendRobotCommand>::SharedFutureWithRequestAndRequestId rclcpp::Client<interface_package::srv::SendRobotCommand>::async_send_request<CallbackT, <anonymous> >(rclcpp::Client<interface_package::srv::SendRobotCommand>::SharedRequest, CallbackT&&) [with CallbackT = NavigationNode::send_command(uint32_t, const ControlCommand&)::<lambda(auto:40)>; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<std::shared_ptr<interface_package::srv::SendRobotCommand_Request_<std::allocator<void> > >, std::shared_ptr<interface_package::srv::SendRobotCommand_Response_<std::allocator<void> > > > >)> >::value, void>::type* <anonymous> = <missing>]’
+/home/thxssio/robotics_framework/src/navigation_package/src/navigation_node.cpp:265:40:   required from here
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9: error: ‘decltype’ cannot resolve address of overloaded function
+   51 |   using arguments = typename tuple_tail<
+      |         ^~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9: error: ‘decltype’ cannot resolve address of overloaded function
+   57 |   using argument_type = typename std::tuple_element<N, arguments>::type;
+      |         ^~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9: error: ‘decltype’ cannot resolve address of overloaded function
+   59 |   using return_type = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+      |         ^~~~~~~~~~~
+/home/thxssio/robotics_framework/src/navigation_package/src/navigation_node.cpp: In member function ‘void NavigationNode::send_command(uint32_t, const ControlCommand&)’:
+/home/thxssio/robotics_framework/src/navigation_package/src/navigation_node.cpp:265:40: error: no matching function for call to ‘rclcpp::Client<interface_package::srv::SendRobotCommand>::async_send_request(std::shared_ptr<interface_package::srv::SendRobotCommand_Request_<std::allocator<void> > >&, NavigationNode::send_command(uint32_t, const ControlCommand&)::<lambda(auto:40)>)’
+  265 |     command_client_->async_send_request(request, [this, robot_id](auto future) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  266 |       try {
+      |       ~~~~~                             
+  267 |         auto response = future.get();
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   
+  268 |         if (!response->ok) {
+      |         ~~~~~~~~~~~~~~~~~~~~            
+  269 |           RCLCPP_WARN(get_logger(), "Robot %u command rejected: %s", robot_id,
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  270 |                       response->message.c_str());
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  271 |         }
+      |         ~                               
+  272 |       } catch (const std::exception &ex) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  273 |         RCLCPP_WARN(get_logger(), "Robot %u command failed: %s", robot_id, ex.what());
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  274 |       }
+      |       ~                                 
+  275 |     });
+      |     ~~                                  
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/thxssio/robotics_framework/src/navigation_package/src/navigation_node.cpp:11:
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:643:3: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::shared_ptr<interface_package::srv::SendRobotCommand_Response_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<typename ServiceT::Response::SharedPtr>)> >::value>::type* <anonymous> = <anonymous>; ServiceT = interface_package::srv::SendRobotCommand]’
+  643 |   async_send_request(SharedRequest request, CallbackT && cb)
+      |   ^~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:643:3: note:   template argument deduction/substitution failed:
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:640:17: error: ‘value’ is not a member of ‘rclcpp::function_traits::same_arguments<NavigationNode::send_command(uint32_t, const ControlCommand&)::<lambda(auto:40)>, std::function<void(std::shared_future<std::shared_ptr<interface_package::srv::SendRobotCommand_Response_<std::allocator<void> > > >)> >’
+  640 |     >::type * = nullptr
+      |                 ^~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:674:3: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<std::shared_ptr<interface_package::srv::SendRobotCommand_Request_<std::allocator<void> > >, std::shared_ptr<interface_package::srv::SendRobotCommand_Response_<std::allocator<void> > > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureWithRequestAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<typename ServiceT::Request::SharedPtr, typename ServiceT::Response::SharedPtr> >)> >::value>::type* <anonymous> = <anonymous>; ServiceT = interface_package::srv::SendRobotCommand]’
+  674 |   async_send_request(SharedRequest request, CallbackT && cb)
+      |   ^~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:674:3: note:   substitution of deduced template arguments resulted in errors seen above
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:608:3: note: candidate: ‘rclcpp::Client<ServiceT>::FutureAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest) [with ServiceT = interface_package::srv::SendRobotCommand; rclcpp::Client<ServiceT>::SharedRequest = std::shared_ptr<interface_package::srv::SendRobotCommand_Request_<std::allocator<void> > >]’
+  608 |   async_send_request(SharedRequest request)
+      |   ^~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:608:3: note:   candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/navigation_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

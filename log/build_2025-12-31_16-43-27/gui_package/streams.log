@@ -1,0 +1,28 @@
+[0.973s] Invoking command in '/home/thxssio/robotics_framework/src/gui_package': AMENT_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/behavior_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thxssio/robotics_framework/build/gui_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gui_package build --build-base /home/thxssio/robotics_framework/build/gui_package/build install --record /home/thxssio/robotics_framework/build/gui_package/install.log --single-version-externally-managed install_data
+[1.300s] running egg_info
+[1.301s] writing ../../build/gui_package/gui_package.egg-info/PKG-INFO
+[1.301s] writing dependency_links to ../../build/gui_package/gui_package.egg-info/dependency_links.txt
+[1.302s] writing entry points to ../../build/gui_package/gui_package.egg-info/entry_points.txt
+[1.302s] writing requirements to ../../build/gui_package/gui_package.egg-info/requires.txt
+[1.302s] writing top-level names to ../../build/gui_package/gui_package.egg-info/top_level.txt
+[1.306s] reading manifest file '../../build/gui_package/gui_package.egg-info/SOURCES.txt'
+[1.307s] writing manifest file '../../build/gui_package/gui_package.egg-info/SOURCES.txt'
+[1.307s] running build
+[1.307s] running build_py
+[1.307s] copying gui_package/gui_interface.py -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package
+[1.307s] copying gui_package/field_widget.py -> /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package
+[1.308s] running install
+[1.309s] running install_lib
+[1.310s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/gui_interface.py -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package
+[1.310s] copying /home/thxssio/robotics_framework/build/gui_package/build/lib/gui_package/field_widget.py -> /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package
+[1.311s] byte-compiling /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/gui_interface.py to gui_interface.cpython-310.pyc
+[1.324s] byte-compiling /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package/field_widget.py to field_widget.cpython-310.pyc
+[1.327s] running install_data
+[1.328s] running install_egg_info
+[1.329s] removing '/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.329s] Copying ../../build/gui_package/gui_package.egg-info to /home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages/gui_package-0.0.0-py3.10.egg-info
+[1.331s] running install_scripts
+[1.352s] Installing framework script to /home/thxssio/robotics_framework/install/gui_package/lib/gui_package
+[1.352s] Installing world_tf_broadcaster script to /home/thxssio/robotics_framework/install/gui_package/lib/gui_package
+[1.352s] writing list of installed files to '/home/thxssio/robotics_framework/build/gui_package/install.log'
+[1.386s] Invoked command in '/home/thxssio/robotics_framework/src/gui_package' returned '0': AMENT_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/behavior_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thxssio/robotics_framework/build/gui_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/gui_package/lib/python3.10/site-packages:/home/thxssio/robotics_framework/install/interface_package/local/lib/python3.10/dist-packages:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gui_package build --build-base /home/thxssio/robotics_framework/build/gui_package/build install --record /home/thxssio/robotics_framework/build/gui_package/install.log --single-version-externally-managed install_data

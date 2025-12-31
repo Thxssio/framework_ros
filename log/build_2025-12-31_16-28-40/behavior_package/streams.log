@@ -1,0 +1,26 @@
+[0.796s] Invoking command in '/home/thxssio/robotics_framework/src/behavior_package': PYTHONPATH=/home/thxssio/robotics_framework/build/behavior_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/behavior_package build --build-base /home/thxssio/robotics_framework/build/behavior_package/build install --record /home/thxssio/robotics_framework/build/behavior_package/install.log --single-version-externally-managed install_data
+[1.067s] running egg_info
+[1.068s] writing ../../build/behavior_package/behavior_package.egg-info/PKG-INFO
+[1.069s] writing dependency_links to ../../build/behavior_package/behavior_package.egg-info/dependency_links.txt
+[1.069s] writing entry points to ../../build/behavior_package/behavior_package.egg-info/entry_points.txt
+[1.069s] writing requirements to ../../build/behavior_package/behavior_package.egg-info/requires.txt
+[1.069s] writing top-level names to ../../build/behavior_package/behavior_package.egg-info/top_level.txt
+[1.078s] reading manifest file '../../build/behavior_package/behavior_package.egg-info/SOURCES.txt'
+[1.079s] writing manifest file '../../build/behavior_package/behavior_package.egg-info/SOURCES.txt'
+[1.079s] running build
+[1.079s] running build_py
+[1.080s] copying behavior_package/goto_ball.py -> /home/thxssio/robotics_framework/build/behavior_package/build/lib/behavior_package
+[1.080s] copying behavior_package/behavior.py -> /home/thxssio/robotics_framework/build/behavior_package/build/lib/behavior_package
+[1.080s] running install
+[1.081s] running install_lib
+[1.083s] copying /home/thxssio/robotics_framework/build/behavior_package/build/lib/behavior_package/goto_ball.py -> /home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages/behavior_package
+[1.084s] copying /home/thxssio/robotics_framework/build/behavior_package/build/lib/behavior_package/behavior.py -> /home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages/behavior_package
+[1.086s] byte-compiling /home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages/behavior_package/goto_ball.py to goto_ball.cpython-310.pyc
+[1.087s] byte-compiling /home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages/behavior_package/behavior.py to behavior.cpython-310.pyc
+[1.088s] running install_data
+[1.088s] running install_egg_info
+[1.093s] removing '/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages/behavior_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.094s] Copying ../../build/behavior_package/behavior_package.egg-info to /home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages/behavior_package-0.0.0-py3.10.egg-info
+[1.095s] running install_scripts
+[1.124s] writing list of installed files to '/home/thxssio/robotics_framework/build/behavior_package/install.log'
+[1.164s] Invoked command in '/home/thxssio/robotics_framework/src/behavior_package' returned '0': PYTHONPATH=/home/thxssio/robotics_framework/build/behavior_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/behavior_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/behavior_package build --build-base /home/thxssio/robotics_framework/build/behavior_package/build install --record /home/thxssio/robotics_framework/build/behavior_package/install.log --single-version-externally-managed install_data

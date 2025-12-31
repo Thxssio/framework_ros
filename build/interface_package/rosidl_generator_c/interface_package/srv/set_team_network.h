@@ -1,0 +1,12 @@
+// generated from rosidl_generator_c/resource/idl.h.em
+// with input from interface_package:srv/SetTeamNetwork.idl
+// generated code does not contain a copyright notice
+
+#ifndef INTERFACE_PACKAGE__SRV__SET_TEAM_NETWORK_H_
+#define INTERFACE_PACKAGE__SRV__SET_TEAM_NETWORK_H_
+
+#include "interface_package/srv/detail/set_team_network__struct.h"
+#include "interface_package/srv/detail/set_team_network__functions.h"
+#include "interface_package/srv/detail/set_team_network__type_support.h"
+
+#endif  // INTERFACE_PACKAGE__SRV__SET_TEAM_NETWORK_H_

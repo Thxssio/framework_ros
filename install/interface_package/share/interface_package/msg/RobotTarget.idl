@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interface_package/msg/RobotTarget.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "interface_package/msg/Pose2D.idl"
+
+module interface_package {
+  module msg {
+    struct RobotTarget {
+      builtin_interfaces::msg::Time stamp;
+
+      uint32 robot_id;
+
+      interface_package::msg::Pose2D target;
+
+      boolean force_path;
+
+      boolean allow_goal_area;
+
+      boolean avoid_ball;
+    };
+  };
+};

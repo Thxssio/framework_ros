@@ -1,0 +1,4 @@
+interface_package/TeamColor team
+---
+bool ok
+string message

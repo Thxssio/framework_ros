@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interface_package/msg/BallState.msg
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/Pose2D.idl"
+
+module interface_package {
+  module msg {
+    struct BallState {
+      interface_package::msg::Pose2D pose;
+
+      boolean visible;
+
+      float confidence;
+    };
+  };
+};

@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from interface_package/action/RunBehavior.action
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/BehaviorChoice.idl"
+#include "interface_package/msg/BehaviorStatus.idl"
+#include "interface_package/msg/ControlCommand.idl"
+#include "interface_package/msg/KickParameters.idl"
+#include "interface_package/msg/NavigationConfig.idl"
+#include "interface_package/msg/PrepareKickoffParameters.idl"
+
+module interface_package {
+  module action {
+    struct RunBehavior_Goal {
+      uint32 robot_id;
+
+      interface_package::msg::BehaviorChoice behavior;
+
+      interface_package::msg::NavigationConfig nav;
+
+      interface_package::msg::KickParameters kick;
+
+      interface_package::msg::PrepareKickoffParameters prep;
+    };
+    struct RunBehavior_Result {
+      boolean accepted;
+
+      string message;
+    };
+    struct RunBehavior_Feedback {
+      interface_package::msg::BehaviorStatus status;
+
+      interface_package::msg::ControlCommand last_command;
+    };
+  };
+};

@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interface_package/msg/VisionDetection.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "interface_package/msg/BallState.idl"
+#include "interface_package/msg/RobotState.idl"
+
+module interface_package {
+  module msg {
+    struct VisionDetection {
+      builtin_interfaces::msg::Time stamp;
+
+      double capture_timestamp;
+
+      sequence<interface_package::msg::RobotState> yellow;
+
+      sequence<interface_package::msg::RobotState> blue;
+
+      interface_package::msg::BallState ball;
+    };
+  };
+};

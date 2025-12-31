@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1388b0bd45769012bd38.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "navigation_package",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_manager_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_manager_node-871599824aa3a3b2dd8c.json",
+					"name" : "navigation_manager_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_module-ff8588974c15fcfa8205.json",
+					"name" : "navigation_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_node-7a1bd50d1a1a80fa3042.json",
+					"name" : "navigation_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_package_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_package_uninstall-7eec4e8c4ebcb71317bf.json",
+					"name" : "navigation_package_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-de5c2a512b513eec8674.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/thxssio/robotics_framework/build/navigation_package",
+		"source" : "/home/thxssio/robotics_framework/src/navigation_package"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

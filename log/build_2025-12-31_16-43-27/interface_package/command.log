@@ -1,0 +1,4 @@
+Invoking command in '/home/thxssio/robotics_framework/build/interface_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thxssio/robotics_framework/build/interface_package -- -j16 -l16
+Invoked command in '/home/thxssio/robotics_framework/build/interface_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thxssio/robotics_framework/build/interface_package -- -j16 -l16
+Invoking command in '/home/thxssio/robotics_framework/build/interface_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thxssio/robotics_framework/build/interface_package
+Invoked command in '/home/thxssio/robotics_framework/build/interface_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thxssio/robotics_framework/build/interface_package

@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_package/srv/LoadConfig.srv
+// generated code does not contain a copyright notice
+
+#include "interface_package/msg/KickParameters.idl"
+#include "interface_package/msg/NavigationConfig.idl"
+#include "interface_package/msg/PrepareKickoffParameters.idl"
+
+module interface_package {
+  module srv {
+    struct LoadConfig_Request {
+      uint8 kind;
+
+      string path;
+    };
+    struct LoadConfig_Response {
+      boolean ok;
+
+      string message;
+
+      interface_package::msg::NavigationConfig nav;
+
+      interface_package::msg::KickParameters kick;
+
+      interface_package::msg::PrepareKickoffParameters prep;
+    };
+  };
+};

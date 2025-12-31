@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interface_package/msg/KickParameters.msg
+// generated code does not contain a copyright notice
+
+
+module interface_package {
+  module msg {
+    struct KickParameters {
+      double kick_speed;
+
+      double kick_angle_deg;
+
+      double kick_distance;
+
+      double facing_tolerance;
+
+      double kick_push_speed;
+
+      double dribbler_rpm;
+    };
+  };
+};
