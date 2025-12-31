@@ -1,0 +1,21 @@
+[0.881s] Invoking command in '/home/thxssio/robotics_framework/src/vision_receiver_package': CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:/home/thxssio/robotics_framework/install/navigation_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/thxssio/robotics_framework/build/vision_receiver_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_receiver_package build --build-base /home/thxssio/robotics_framework/build/vision_receiver_package/build install --record /home/thxssio/robotics_framework/build/vision_receiver_package/install.log --single-version-externally-managed install_data
+[1.094s] running egg_info
+[1.094s] writing ../../build/vision_receiver_package/vision_receiver_package.egg-info/PKG-INFO
+[1.095s] writing dependency_links to ../../build/vision_receiver_package/vision_receiver_package.egg-info/dependency_links.txt
+[1.095s] writing entry points to ../../build/vision_receiver_package/vision_receiver_package.egg-info/entry_points.txt
+[1.095s] writing requirements to ../../build/vision_receiver_package/vision_receiver_package.egg-info/requires.txt
+[1.095s] writing top-level names to ../../build/vision_receiver_package/vision_receiver_package.egg-info/top_level.txt
+[1.098s] reading manifest file '../../build/vision_receiver_package/vision_receiver_package.egg-info/SOURCES.txt'
+[1.098s] writing manifest file '../../build/vision_receiver_package/vision_receiver_package.egg-info/SOURCES.txt'
+[1.098s] running build
+[1.098s] running build_py
+[1.098s] running install
+[1.099s] running install_lib
+[1.100s] running install_data
+[1.100s] running install_egg_info
+[1.102s] removing '/home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.102s] Copying ../../build/vision_receiver_package/vision_receiver_package.egg-info to /home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages/vision_receiver_package-0.0.0-py3.10.egg-info
+[1.102s] running install_scripts
+[1.120s] Installing vision_receiver script to /home/thxssio/robotics_framework/install/vision_receiver_package/lib/vision_receiver_package
+[1.120s] writing list of installed files to '/home/thxssio/robotics_framework/build/vision_receiver_package/install.log'
+[1.147s] Invoked command in '/home/thxssio/robotics_framework/src/vision_receiver_package' returned '0': CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:/home/thxssio/robotics_framework/install/navigation_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/thxssio/robotics_framework/build/vision_receiver_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thxssio/robotics_framework/install/vision_receiver_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_receiver_package build --build-base /home/thxssio/robotics_framework/build/vision_receiver_package/build install --record /home/thxssio/robotics_framework/build/vision_receiver_package/install.log --single-version-externally-managed install_data

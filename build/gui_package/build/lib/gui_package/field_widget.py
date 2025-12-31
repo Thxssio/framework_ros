@@ -3,12 +3,13 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass, field as dc_field
 from enum import Enum
-from importlib import resources
 from typing import Dict, List, Optional, Tuple
 
 from PyQt6.QtCore import QPointF, QRectF, Qt, pyqtSignal
-from PyQt6.QtGui import QColor, QFont, QMouseEvent, QPainter, QPen, QPixmap, QTransform
+from PyQt6.QtGui import QColor, QFont, QMouseEvent, QPainter, QPen, QPixmap
 from PyQt6.QtWidgets import QWidget
+
+from .robot_faces import RobotFaceAtlas
 
 
 class TeamColor(Enum):
@@ -120,17 +121,11 @@ def draw_dragged_robot(
     p.save()
     p.setOpacity(0.7)
     if not icon.isNull():
-        scaled = icon.scaled(
-            int(radius * 2.0),
-            int(radius * 2.0),
-            Qt.AspectRatioMode.KeepAspectRatio,
-            Qt.TransformationMode.SmoothTransformation,
-        )
         p.translate(center)
         angle_deg = (-direction * 180.0 / math.pi - 90.0)
         p.rotate(angle_deg)
-        center_point = QPointF(-scaled.width() / 2.0, -scaled.height() / 2.0)
-        p.drawPixmap(center_point, scaled)
+        center_point = QPointF(-icon.width() / 2.0, -icon.height() / 2.0)
+        p.drawPixmap(center_point, icon)
     else:
         p.setPen(Qt.PenStyle.NoPen)
         p.setBrush(color)
@@ -163,6 +158,9 @@ class FieldWidget(QWidget):
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         super().__init__(parent)
         self.setMinimumSize(900, 600)
+        self.setAttribute(Qt.WidgetAttribute.WA_OpaquePaintEvent, True)
+        self.setAttribute(Qt.WidgetAttribute.WA_NoSystemBackground, True)
+        self.setAutoFillBackground(False)
 
         self.world: Optional[WorldState] = None
         self.show_path: bool = False
@@ -175,7 +173,7 @@ class FieldWidget(QWidget):
         self.active_drag: Optional[ActiveDrag] = None
         self.drag_preview: Optional[DragPreview] = None
 
-        self.icon_cache: Dict[str, QPixmap] = {}
+        self._face_atlas = RobotFaceAtlas()
 
     def set_world(self, world_state: Optional[WorldState]) -> None:
         self.world = world_state
@@ -245,12 +243,14 @@ class FieldWidget(QWidget):
                     friendly = (self.drag_preview.is_yellow == friendly_is_yellow)
 
                 dummy = RobotState(id=int(self.drag_preview.robot_id), pose=Pose2D(theta=self.drag_preview.dir))
-                icon = self.robot_icon(dummy, friendly) if self.world is not None else QPixmap()
+                diameter = max(1, int(r * 2.0))
+                icon = self.robot_icon(dummy, friendly, diameter) if self.world is not None else QPixmap()
                 color = HomeColor() if friendly else AwayColor()
                 draw_dragged_robot(painter, icon, color, r, self.drag_preview.dir, center)
 
 
     def draw_field(self, painter: QPainter) -> None:
+        painter.fillRect(self.rect(), BackgroundColor())
         scale, offset_x, offset_y = self.compute_field_transform()
         length = self.field_length()
         width = self.field_width()
@@ -356,20 +356,15 @@ class FieldWidget(QWidget):
                 center = self.world_to_screen(robot.pose.x, robot.pose.y)
                 drew_sprite = False
 
-                pix = self.robot_icon(robot, friendly)
+                diameter = max(1, int(radius * 2.0))
+                pix = self.robot_icon(robot, friendly, diameter)
                 if not pix.isNull():
-                    scaled = pix.scaled(
-                        int(radius * 2.0),
-                        int(radius * 2.0),
-                        Qt.AspectRatioMode.KeepAspectRatio,
-                        Qt.TransformationMode.SmoothTransformation,
-                    )
                     painter.save()
                     painter.translate(center)
                     angle_deg = (-robot.pose.theta * 180.0 / math.pi - 90.0)
                     painter.rotate(angle_deg)
-                    top_left = QPointF(-scaled.width() / 2.0, -scaled.height() / 2.0)
-                    painter.drawPixmap(top_left, scaled)
+                    top_left = QPointF(-pix.width() / 2.0, -pix.height() / 2.0)
+                    painter.drawPixmap(top_left, pix)
                     painter.restore()
                     drew_sprite = True
                 else:
@@ -599,34 +594,13 @@ class FieldWidget(QWidget):
         return kDefaultBallRadius
 
 
-    def team_folder(self, friendly: bool) -> str:
-        if self.world is None:
-            return "blue"
-        fc = self.world.friendly_color
-        if (friendly and fc == TeamColor.kYellow) or ((not friendly) and fc == TeamColor.kBlue):
-            return "yellow"
-        return "blue"
-
-    def robot_icon(self, robot: RobotState, friendly: bool) -> QPixmap:
-        folder = self.team_folder(friendly)  
-        key = f"{folder}_{'friendly' if friendly else 'opponent'}_{robot.id}"
-
-        if key not in self.icon_cache:
-            pix = QPixmap()
-            try:
-                resource = resources.files(__package__).joinpath(
-                    "teams", folder, f"{robot.id}.png"
-                )
-                with resources.as_file(resource) as img_path:
-                    pix.load(str(img_path))
-            except (FileNotFoundError, ModuleNotFoundError, AttributeError):
-                pass
-
-            if not pix.isNull():
-                mirror = QTransform()
-                mirror.scale(-1.0, -1.0)
-                pix = pix.transformed(mirror, Qt.TransformationMode.SmoothTransformation)
-
-            self.icon_cache[key] = pix
-
-        return self.icon_cache[key]
+    def robot_icon(self, robot: RobotState, friendly: bool, diameter_px: Optional[int] = None) -> QPixmap:
+        if diameter_px is None:
+            diameter_px = int(max(1.0, self.robot_radius() * 2.0 * self.compute_field_transform()[0]))
+        if diameter_px <= 0:
+            return QPixmap()
+        friendly_is_yellow = True
+        if self.world is not None:
+            friendly_is_yellow = (self.world.friendly_color == TeamColor.kYellow)
+        team_is_yellow = friendly_is_yellow if friendly else (not friendly_is_yellow)
+        return self._face_atlas.pixmap(int(robot.id), team_is_yellow, diameter_px)

@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "name": "Robot Face Configurator",
+    "unit": "mm",
+    "coordinate_system": "cartesian_center_origin"
+  },
+  "palette_definitions": {
+    "magenta": "#FF00FF",
+    "green": "#00FF00",
+    "blue": "#0000FF",
+    "black": "#000000"
+  },
+  "geometry": {
+    "background": {
+      "shape": "circle_segment",
+      "radius": 85.0,
+      "cut_y_offset": 55.0,
+      "color": "black"
+    },
+    "elements": {
+      "eye_left":   { "x": -54.772, "y": 35.0,   "radius": 20.0 },
+      "eye_right":  { "x": 54.772,  "y": 35.0,   "radius": 20.0 },
+      "nose":       { "x": 0.0,     "y": 0.0,    "radius": 25.0 },
+      "cheek_left": { "x": -35.0,   "y": -54.772,"radius": 20.0 },
+      "cheek_right":{ "x": 35.0,    "y": -54.772,"radius": 20.0 }
+    }
+  },
+  "layout_map": [
+    "eye_left",
+    "eye_right",
+    "nose",
+    "cheek_left",
+    "cheek_right"
+  ],
+  "configurations": [
+    {
+      "id": 0,
+      "description": "Standard (Left Cheek Green)",
+      "map": ["magenta", "magenta", "blue", "green", "magenta"]
+    },
+    {
+      "id": 1,
+      "description": "Left Column Green",
+      "map": ["green", "magenta", "blue", "green", "magenta"]
+    },
+    {
+      "id": 2,
+      "description": "Top & Left Cheek Green",
+      "map": ["green", "green", "blue", "green", "magenta"]
+    },
+    {
+      "id": 3,
+      "description": "Diagonal / Green",
+      "map": ["magenta", "green", "blue", "green", "magenta"]
+    },
+    {
+      "id": 4,
+      "description": "Right Cheek Green",
+      "map": ["magenta", "magenta", "blue", "magenta", "green"]
+    },
+    {
+      "id": 5,
+      "description": "Diagonal \\ Green",
+      "map": ["green", "magenta", "blue", "magenta", "green"]
+    },
+    {
+      "id": 6,
+      "description": "Top & Right Cheek Green",
+      "map": ["green", "green", "blue", "magenta", "green"]
+    },
+    {
+      "id": 7,
+      "description": "Right Column Green",
+      "map": ["magenta", "green", "blue", "magenta", "green"]
+    },
+    {
+      "id": 8,
+      "description": "All Green",
+      "map": ["green", "green", "blue", "green", "green"]
+    },
+    {
+      "id": 9,
+      "description": "All Magenta",
+      "map": ["magenta", "magenta", "blue", "magenta", "magenta"]
+    },
+    {
+      "id": 10,
+      "description": "Bottom Row Green",
+      "map": ["magenta", "magenta", "blue", "green", "green"]
+    },
+    {
+      "id": 11,
+      "description": "Top Row Green",
+      "map": ["green", "green", "blue", "magenta", "magenta"]
+    },
+    {
+      "id": 12,
+      "description": "Left Eye & Bottom Green",
+      "map": ["green", "magenta", "blue", "green", "green"]
+    },
+    {
+      "id": 13,
+      "description": "Left Eye Green",
+      "map": ["green", "magenta", "blue", "magenta", "magenta"]
+    },
+    {
+      "id": 14,
+      "description": "Right Eye & Bottom Green",
+      "map": ["magenta", "green", "blue", "green", "green"]
+    },
+    {
+      "id": 15,
+      "description": "Right Eye Green",
+      "map": ["magenta", "green", "blue", "magenta", "magenta"]
+    }
+  ]
+}

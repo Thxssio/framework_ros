@@ -1,0 +1,41 @@
+[0.020s] Invoking command in '/home/thxssio/robotics_framework/build/navigation_package': CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package:/home/thxssio/robotics_framework/install/vision_receiver_package:/home/thxssio/robotics_framework/install/gui_package:/home/thxssio/robotics_framework/install/behavior_package:/opt/ros/humble LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:/home/thxssio/robotics_framework/install/navigation_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/thxssio/robotics_framework/build/navigation_package -- -j16 -l16
+[0.077s] [ 50%] Built target navigation_module
+[0.079s] [ 75%] Built target navigation_manager_node
+[0.116s] [100%] Built target navigation_node
+[0.353s] Invoked command in '/home/thxssio/robotics_framework/build/navigation_package' returned '0': CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package:/home/thxssio/robotics_framework/install/vision_receiver_package:/home/thxssio/robotics_framework/install/gui_package:/home/thxssio/robotics_framework/install/behavior_package:/opt/ros/humble LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:/home/thxssio/robotics_framework/install/navigation_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/thxssio/robotics_framework/build/navigation_package -- -j16 -l16
+[0.353s] Invoking command in '/home/thxssio/robotics_framework/build/navigation_package': CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package:/home/thxssio/robotics_framework/install/vision_receiver_package:/home/thxssio/robotics_framework/install/gui_package:/home/thxssio/robotics_framework/install/behavior_package:/opt/ros/humble LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:/home/thxssio/robotics_framework/install/navigation_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/thxssio/robotics_framework/build/navigation_package
+[0.361s] -- Install configuration: ""
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/lib/libnavigation_module.a
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/navigation
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/navigation/navigation_module.h
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/planning
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/planning/path_planner.h
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/include/grsim/framework/planning/trajectory_optimizer.h
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/lib/navigation_package/navigation_manager_node
+[0.361s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/lib/navigation_package/navigation_node
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/library_path.sh
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/library_path.dsv
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/ament_index/resource_index/package_run_dependencies/navigation_package
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/ament_index/resource_index/parent_prefix_path/navigation_package
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/ament_prefix_path.sh
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/ament_prefix_path.dsv
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/path.sh
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/environment/path.dsv
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/local_setup.bash
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/local_setup.sh
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/local_setup.zsh
+[0.362s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/local_setup.dsv
+[0.362s] -- Installing: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.dsv
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/ament_index/resource_index/packages/navigation_package
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/export_navigation_moduleExport.cmake
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/export_navigation_moduleExport-noconfig.cmake
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/ament_cmake_export_targets-extras.cmake
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/navigation_packageConfig.cmake
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/cmake/navigation_packageConfig-version.cmake
+[0.363s] -- Up-to-date: /home/thxssio/robotics_framework/install/navigation_package/share/navigation_package/package.xml
+[0.365s] Invoked command in '/home/thxssio/robotics_framework/build/navigation_package' returned '0': CMAKE_PREFIX_PATH=/home/thxssio/robotics_framework/install/interface_package:/home/thxssio/robotics_framework/install/robot_communication_package:/home/thxssio/robotics_framework/install/navigation_package:/home/thxssio/robotics_framework/install/vision_receiver_package:/home/thxssio/robotics_framework/install/gui_package:/home/thxssio/robotics_framework/install/behavior_package:/opt/ros/humble LD_LIBRARY_PATH=/home/thxssio/robotics_framework/install/interface_package/lib:/home/thxssio/robotics_framework/install/navigation_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/thxssio/robotics_framework/build/navigation_package

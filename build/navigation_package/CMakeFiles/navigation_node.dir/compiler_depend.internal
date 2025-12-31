@@ -693,12 +693,17 @@ CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__traits.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__type_support.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/path_preview.hpp
+ /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__struct.hpp
+ /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__struct.hpp
+ /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__builder.hpp
+ /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__traits.hpp
+ /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__traits.hpp
+ /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__type_support.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_state.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__struct.hpp
- /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__struct.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__builder.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__traits.hpp
- /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__traits.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__type_support.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_target.hpp
  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__struct.hpp

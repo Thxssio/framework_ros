@@ -59,16 +59,19 @@ class PathPreview(metaclass=Metaclass_PathPreview):
     """Message class 'PathPreview'."""
 
     __slots__ = [
+        '_robot_id',
         '_path',
         '_direct',
     ]
 
     _fields_and_field_types = {
+        'robot_id': 'uint32',
         'path': 'sequence<interface_package/Pose2D>',
         'direct': 'sequence<interface_package/Pose2D>',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['interface_package', 'msg'], 'Pose2D')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['interface_package', 'msg'], 'Pose2D')),  # noqa: E501
     )
@@ -77,6 +80,7 @@ class PathPreview(metaclass=Metaclass_PathPreview):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.robot_id = kwargs.get('robot_id', int())
         self.path = kwargs.get('path', [])
         self.direct = kwargs.get('direct', [])
 
@@ -109,6 +113,8 @@ class PathPreview(metaclass=Metaclass_PathPreview):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.robot_id != other.robot_id:
+            return False
         if self.path != other.path:
             return False
         if self.direct != other.direct:
@@ -119,6 +125,21 @@ class PathPreview(metaclass=Metaclass_PathPreview):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def robot_id(self):
+        """Message field 'robot_id'."""
+        return self._robot_id
+
+    @robot_id.setter
+    def robot_id(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'robot_id' field must be of type 'int'"
+            assert value >= 0 and value < 4294967296, \
+                "The 'robot_id' field must be an unsigned integer in [0, 4294967295]"
+        self._robot_id = value
 
     @builtins.property
     def path(self):

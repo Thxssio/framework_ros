@@ -60,7 +60,6 @@ class GoToBallBehavior(BehaviorBase):
         self.set_last_target(target)
         return BehaviorStatus.RUNNING
 
-    # ------------------------------------------------------------------
     def _find_robot(self, context: BehaviorContext):
         for robot in context.world.friendly:
             if robot.id == self._robot_id:

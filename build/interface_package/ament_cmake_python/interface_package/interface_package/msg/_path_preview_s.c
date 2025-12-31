@@ -60,6 +60,15 @@ bool interface_package__msg__path_preview__convert_from_py(PyObject * _pymsg, vo
     assert(strncmp("interface_package.msg._path_preview.PathPreview", full_classname_dest, 47) == 0);
   }
   interface_package__msg__PathPreview * ros_message = _ros_message;
+  {  // robot_id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "robot_id");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->robot_id = PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
   {  // path
     PyObject * field = PyObject_GetAttrString(_pymsg, "path");
     if (!field) {
@@ -148,6 +157,17 @@ PyObject * interface_package__msg__path_preview__convert_to_py(void * raw_ros_me
     }
   }
   interface_package__msg__PathPreview * ros_message = (interface_package__msg__PathPreview *)raw_ros_message;
+  {  // robot_id
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->robot_id);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "robot_id", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // path
     PyObject * field = NULL;
     size_t size = ros_message->path.size;

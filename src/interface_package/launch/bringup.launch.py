@@ -1,5 +1,7 @@
 """General launch entry point for the framework interface stack."""
 
+from pathlib import Path
+
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
@@ -123,11 +125,23 @@ def generate_launch_description() -> LaunchDescription:
             default_value="10302",
             description="Port for the robot UDP control port",
         ),
+        DeclareLaunchArgument(
+            "robot_replacement_host",
+            default_value="127.0.0.1",
+            description="Host for grSim replacement packets (teleport). Leave as host if unused.",
+        ),
+        DeclareLaunchArgument(
+            "robot_replacement_port",
+            default_value="0",
+            description="Port for replacement packets (0 reuses command port).",
+        ),
     ]
 
     robot_params = [
         {"host": LaunchConfiguration("robot_command_host")},
         {"port": LaunchConfiguration("robot_command_port")},
+        {"replacement_host": LaunchConfiguration("robot_replacement_host")},
+        {"replacement_port": LaunchConfiguration("robot_replacement_port")},
     ]
 
     vision_node = Node(
@@ -139,13 +153,13 @@ def generate_launch_description() -> LaunchDescription:
     )
 
 
-    #tf_node = Node(
-    #    package="gui_package",
-    #    executable="world_tf_broadcaster",
-    #    name="world_tf_broadcaster",
-    #    output="screen",
-    #    parameters=tf_params,
-    #)
+    tf_node = Node(
+        package="gui_package",
+        executable="world_tf_broadcaster",
+        name="world_tf_broadcaster",
+        output="screen",
+        parameters=tf_params,
+    )
 
     gui_node = Node(
         package="gui_package",
@@ -153,6 +167,17 @@ def generate_launch_description() -> LaunchDescription:
         name="framework",
         output="screen",
         parameters=gui_params,
+    )
+
+    path_visualizer_node = Node(
+        package="gui_package",
+        executable="path_preview_visualizer",
+        name="path_preview_visualizer",
+        output="screen",
+        parameters=[
+            {"path_preview_topic": LaunchConfiguration("navigation_path_preview_topic")},
+            {"frame_id": LaunchConfiguration("tf_fixed_frame")},
+        ],
     )
 
     robot_node = Node(
@@ -184,6 +209,15 @@ def generate_launch_description() -> LaunchDescription:
         ],
     )
 
+    rviz_config = str(Path(__file__).resolve().parent.parent / ".ros" / "config.rviz")
+    rviz_node = Node(
+        package="rviz2",
+        executable="rviz2",
+        name="rviz2",
+        arguments=["-d", rviz_config],
+        output="screen",
+    )
+
     launch_items = (
         vision_launch_args
         + tf_launch_args
@@ -191,7 +225,15 @@ def generate_launch_description() -> LaunchDescription:
         + gui_topic_args
         + [robot_service_arg]
         + robot_args
-        #+ [navigation_manager_node, vision_node, tf_node, robot_node, gui_node]
-        + [navigation_manager_node, navigation_node, vision_node, robot_node, gui_node]
+        + [
+            navigation_manager_node,
+            navigation_node,
+            vision_node,
+            robot_node,
+            gui_node,
+            path_visualizer_node,
+            tf_node,
+            rviz_node,
+        ]
     )
     return LaunchDescription(launch_items)

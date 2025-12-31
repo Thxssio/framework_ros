@@ -8,8 +8,7 @@ setup(
     packages=find_packages(exclude=['test']),
     package_data={
         'gui_package': [
-            'teams/*.png',
-            'teams/*/*.png',
+            'teams/*.json',
         ],
     },
     data_files=[
@@ -33,6 +32,7 @@ setup(
         'console_scripts': [
             'world_tf_broadcaster = gui_package.world_tf_broadcaster:main',
             'framework = gui_package.gui_interface:main',
+            'path_preview_visualizer = gui_package.path_preview_visualizer:main',
         ],
     },
 )

@@ -1,0 +1,41 @@
+{
+  "vision": {
+    "bind_address": "0.0.0.0",
+    "port": 10006,
+    "multicast": "224.5.23.2",
+    "interface_address": "0.0.0.0",
+    "poll_period_s": 0.002,
+    "merge_timeout_s": 0.03,
+    "gc_timeout_s": 0.5,
+    "friendly_color": "yellow",
+    "expected_cameras": 4,
+    "blue_command_port": 10301,
+    "yellow_command_port": 10302
+  },
+  "robot_commander": {
+    "host": "127.0.0.1",
+    "port": 10302,
+    "replacement_host": "127.0.0.1",
+    "replacement_port": 20011,
+    "repeat_rate_hz": 60.0,
+    "hold_time_s": 0.25
+  },
+  "navigation": {
+    "stop_distance": 0.2,
+    "linear_gain": 4.0,
+    "max_speed": 1.0,
+    "max_angular_speed": 3.0,
+    "angular_gain": 4.0,
+    "planner_resolution": 0.01,
+    "planner_clearance": 0.25,
+    "collision_threshold": 0.2,
+    "optimizer_weight_smooth": 0.5,
+    "optimizer_weight_jerk": 0.05,
+    "optimizer_weight_obstacle": 0.5,
+    "optimizer_step_size": 0.25,
+    "optimizer_clearance": 0.25,
+    "max_segment_length": 0.0,
+    "optimizer_iterations": 200,
+    "force_path_planning": true
+  }
+}

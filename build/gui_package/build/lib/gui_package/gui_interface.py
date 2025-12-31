@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import copy
+import json
 import math
 import sys
-from typing import Callable, Dict, Optional
+from pathlib import Path
+from typing import Callable, Dict, List, Optional
 
 import rclpy
 from rclpy.executors import ExternalShutdownException
@@ -18,7 +20,6 @@ from rcl_interfaces.srv import GetParameters, SetParameters
 
 from PyQt6 import QtCore, QtGui, QtWidgets
 
-from importlib import resources
 from interface_package.msg import (
     ControlCommand as RosControlCommand,
     FieldDimensions as RosFieldDimensions,
@@ -33,6 +34,8 @@ from interface_package.msg import (
 )
 from interface_package.srv import (
     GetNavigationConfig,
+    SendReplacementBall,
+    SendReplacementRobot,
     SendRobotCommand,
     SetNavigationConfig,
 )
@@ -55,6 +58,7 @@ from .field_widget import (
     TeamColor as GuiTeamColor,
     WorldState as GuiWorldState,
 )
+from .robot_faces import RobotFaceAtlas
 
 NAV_FIELD_NAMES = [
     "stop_distance",
@@ -96,6 +100,9 @@ class MainWindow(QtWidgets.QWidget):
         self.field_widget = FieldWidget()
         self.field_widget.set_side_labels("Left: Blue", "Right: Yellow")
         self.field_widget.set_world(GuiWorldState(friendly_color=GuiTeamColor.kYellow))
+        self.field_widget.DragReleased.connect(self._on_drag_released)
+        self.field_widget.FieldClicked.connect(self._on_field_clicked)
+        self._face_atlas = RobotFaceAtlas()
         self._ros_node: Optional[GuiRosNode] = None
         self._vision_fields: Dict[str, QtWidgets.QWidget] = {}
         self._robot_commander_fields: Dict[str, QtWidgets.QWidget] = {}
@@ -120,6 +127,8 @@ class MainWindow(QtWidgets.QWidget):
             "port": 10301,
             "repeat_rate_hz": 60.0,
             "hold_time_s": 0.25,
+            "replacement_host": "127.0.0.1",
+            "replacement_port": 20011,
         }
         self._nav_defaults: Dict[str, object] = {
             "stop_distance": 0.2,
@@ -150,6 +159,8 @@ class MainWindow(QtWidgets.QWidget):
             "dribbler": False,
             "dribbler_rpm": 0.0,
         }
+        self._saved_config_data: Dict[str, Dict[str, object]] | None = None
+        self._pending_saved_apply: bool = False
 
         self._apply_dark_palette()
 
@@ -225,15 +236,69 @@ class MainWindow(QtWidgets.QWidget):
         self._vision_status = QtWidgets.QLabel("Vision -- fps")
         self._vision_status.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight)
 
+        self._config_status = QtWidgets.QLabel("")
+        self._config_status.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight)
+        self._config_status.setStyleSheet("color: #bbb; font-size: 11px;")
+
         status_layout.addWidget(self._friendly_label)
         status_layout.addWidget(self._vision_status)
+        status_layout.addWidget(self._config_status)
 
         layout.addWidget(toggle_frame, 1)
         layout.addWidget(status_frame, 0)
 
-        show_path.toggled.connect(self.field_widget.set_show_path)
-        show_direct.toggled.connect(self.field_widget.set_show_direct_path)
+        show_path.toggled.connect(self._handle_show_path_toggle)
+        show_direct.toggled.connect(self._handle_show_direct_path_toggle)
+
+        save_btn = QtWidgets.QPushButton("Save config")
+        save_btn.setToolTip("Persist the current parameter forms to disk.")
+        save_btn.clicked.connect(self._save_current_configuration)
+        layout.addWidget(save_btn, 0)
         return layout
+
+    def _handle_show_path_toggle(self, enabled: bool) -> None:
+        self.field_widget.set_show_path(enabled)
+        self._notify_path_preview_visibility()
+
+    def _handle_show_direct_path_toggle(self, enabled: bool) -> None:
+        self.field_widget.set_show_direct_path(enabled)
+        self._notify_path_preview_visibility()
+
+    def _notify_path_preview_visibility(self) -> None:
+        if self._ros_node is None:
+            return
+        visible = bool(self.field_widget.show_path or self.field_widget.show_direct_path)
+        self._ros_node.handle_path_preview_visibility(visible)
+
+    def _on_drag_released(
+        self,
+        is_ball: bool,
+        robot_id: int,
+        is_yellow: bool,
+        direction: float,
+        point: QtCore.QPointF,
+    ) -> None:
+        if self._ros_node is None:
+            return
+        if is_ball:
+            self._ros_node.teleport_ball(point.x(), point.y(), 0.0, 0.0)
+        else:
+            self._ros_node.teleport_robot(
+                robot_id=robot_id,
+                is_yellow=is_yellow,
+                x=point.x(),
+                y=point.y(),
+                theta=direction,
+                present=True,
+            )
+
+    def _on_field_clicked(self, point: QtCore.QPointF, button, modifiers) -> None:
+        if self._ros_node is None:
+            return
+        if button == QtCore.Qt.MouseButton.LeftButton and (
+            modifiers & QtCore.Qt.KeyboardModifier.ControlModifier
+        ):
+            self._ros_node.teleport_ball(point.x(), point.y(), 0.0, 0.0)
 
     def _build_sidebar(self) -> QtWidgets.QWidget:
         sidebar_layout = QtWidgets.QVBoxLayout()
@@ -250,6 +315,7 @@ class MainWindow(QtWidgets.QWidget):
         self._apply_robot_commander_defaults()
         self._apply_navigation_defaults()
         self._apply_command_defaults()
+        self._load_saved_configuration()
 
         sidebar_container = QtWidgets.QWidget()
         sidebar_container.setLayout(sidebar_layout)
@@ -353,6 +419,16 @@ class MainWindow(QtWidgets.QWidget):
         port_spin = QtWidgets.QSpinBox()
         port_spin.setRange(1, 65535)
         add_field("port", port_spin, "Port")
+
+        repl_host_edit = QtWidgets.QLineEdit()
+        repl_host_edit.setPlaceholderText("127.0.0.1")
+        repl_host_edit.setToolTip("Destination for grSim replacement packets (leave empty to reuse Host).")
+        add_field("replacement_host", repl_host_edit, "Replacement host")
+
+        repl_port_spin = QtWidgets.QSpinBox()
+        repl_port_spin.setRange(0, 65535)
+        repl_port_spin.setToolTip("Destination port for replacement packets (0 reuses command port).")
+        add_field("replacement_port", repl_port_spin, "Replacement port")
 
         repeat_spin = QtWidgets.QDoubleSpinBox()
         repeat_spin.setRange(0.0, 2000.0)
@@ -522,7 +598,6 @@ class MainWindow(QtWidgets.QWidget):
         self._decision_placeholder = placeholder
         self._decision_list_layout = list_layout
         self._decision_cards: Dict[tuple[str, int], dict[str, QtWidgets.QWidget]] = {}
-        self._tag_cache: Dict[tuple, QtGui.QPixmap] = {}
         self._behavior_assignments: Dict[int, str] = {}
 
         scroll = QtWidgets.QScrollArea()
@@ -545,22 +620,15 @@ class MainWindow(QtWidgets.QWidget):
         if detection_topic:
             self.field_widget.setToolTip(f"Subscribed to {detection_topic}")
 
-    def _team_folder(self, friendly_flag: bool) -> str:
-        world = getattr(self.field_widget, "world", None)
-        if world is None:
-            return "blue"
-        fc = world.friendly_color
-        if (friendly_flag and fc == GuiTeamColor.kYellow) or (
-            (not friendly_flag) and fc == GuiTeamColor.kBlue
-        ):
-            return "yellow"
-        return "blue"
-
     def bind_ros_node(self, node: GuiRosNode) -> None:
         self._ros_node = node
-        QtCore.QTimer.singleShot(0, self._request_vision_params)
-        QtCore.QTimer.singleShot(0, self._request_robot_commander_params)
-        QtCore.QTimer.singleShot(0, self._request_navigation_config)
+        self._notify_path_preview_visibility()
+        if self._pending_saved_apply:
+            QtCore.QTimer.singleShot(0, self._apply_saved_configuration_if_ready)
+        else:
+            QtCore.QTimer.singleShot(0, self._request_vision_params)
+            QtCore.QTimer.singleShot(0, self._request_robot_commander_params)
+            QtCore.QTimer.singleShot(0, self._request_navigation_config)
 
     def _request_vision_params(self) -> None:
         if self._ros_node is None:
@@ -843,11 +911,118 @@ class MainWindow(QtWidgets.QWidget):
             self._command_status_label.setStyleSheet(f"color: {color}; font-size: 11px;")
             self._command_status_label.setText(text)
 
+    def _workspace_root(self) -> Path:
+        candidates = [Path.cwd(), Path(__file__).resolve()]
+        seen: set[Path] = set()
+        for base in candidates:
+            current = base
+            while True:
+                if current in seen:
+                    break
+                seen.add(current)
+                if (current / "src").exists():
+                    return current
+                if current.parent == current:
+                    break
+                current = current.parent
+        return Path.cwd()
+
+    def _config_file_path(self) -> Path:
+        root = self._workspace_root()
+        return root / ".ros" / "framework_gui_config.json"
+
+    def _set_config_status(self, text: str, color: str = "#bbb") -> None:
+        if hasattr(self, "_config_status") and self._config_status is not None:
+            self._config_status.setText(text)
+            self._config_status.setStyleSheet(f"color: {color}; font-size: 11px;")
+
+    def _save_current_configuration(self) -> None:
+        data = {
+            "vision": self._collect_vision_params(),
+            "robot_commander": self._collect_robot_commander_params(),
+            "navigation": self._collect_navigation_params(),
+        }
+        path = self._config_file_path()
+        try:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with path.open("w", encoding="utf-8") as handle:
+                json.dump(data, handle, indent=2)
+            self._set_config_status("Configuration saved.", "#2e7d32")
+        except Exception as exc:
+            self._set_config_status(f"Failed to save config: {exc}", "#d32f2f")
+
+    def _load_saved_configuration(self) -> None:
+        path = self._config_file_path()
+        if not path.exists():
+            return
+        try:
+            with path.open("r", encoding="utf-8") as handle:
+                data = json.load(handle)
+        except Exception as exc:
+            self._set_config_status(f"Failed to load config: {exc}", "#d32f2f")
+            return
+        if not isinstance(data, dict):
+            self._set_config_status("Invalid config file.", "#d32f2f")
+            return
+        sections_loaded: List[str] = []
+        vision_data = data.get("vision")
+        if isinstance(vision_data, dict):
+            self.populate_vision_form(vision_data)
+            sections_loaded.append("vision")
+            if hasattr(self, "_vision_status_label"):
+                self._vision_status_label.setText("Loaded saved parameters (not applied).")
+                self._vision_status_label.setStyleSheet("color: #bbb; font-size: 11px;")
+        robot_data = data.get("robot_commander")
+        if isinstance(robot_data, dict):
+            self.populate_robot_commander_form(robot_data)
+            sections_loaded.append("robot")
+            self._set_robot_commander_status("Loaded saved parameters (not applied).", "#bbb")
+        nav_data = data.get("navigation")
+        if isinstance(nav_data, dict):
+            self.populate_navigation_form(nav_data)
+            sections_loaded.append("navigation")
+            self._set_nav_status("Loaded saved config (not sent).", "#bbb")
+        if sections_loaded:
+            self._set_config_status("Loaded saved configuration.", "#2e7d32")
+            self._saved_config_data = data
+            self._pending_saved_apply = True
+        else:
+            self._set_config_status("No saved configuration found.", "#bbb")
+
+    def _apply_saved_configuration_if_ready(self) -> None:
+        if self._ros_node is None or not self._pending_saved_apply:
+            return
+        data = self._saved_config_data or {}
+        self._pending_saved_apply = False
+        sections: List[str] = []
+
+        vision = data.get("vision")
+        if isinstance(vision, dict):
+            self.populate_vision_form(vision)
+            self._on_apply_vision_params()
+            sections.append("vision")
+
+        robot = data.get("robot_commander")
+        if isinstance(robot, dict):
+            self.populate_robot_commander_form(robot)
+            self._on_apply_robot_commander_params()
+            sections.append("robot")
+
+        nav = data.get("navigation")
+        if isinstance(nav, dict):
+            self.populate_navigation_form(nav)
+            self._on_apply_navigation_config()
+            sections.append("navigation")
+
+        if sections:
+            self._set_config_status("Applied saved configuration.", "#2e7d32")
+        else:
+            self._set_config_status("Saved configuration empty.", "#bbb")
+
     def on_world_update(self, world: GuiWorldState) -> None:
         if self._last_friendly_color is None:
             self._last_friendly_color = world.friendly_color
         elif world.friendly_color != self._last_friendly_color:
-            self._tag_cache.clear()
             self._last_friendly_color = world.friendly_color
 
         color_text = "Yellow" if world.friendly_color == GuiTeamColor.kYellow else "Blue"
@@ -898,36 +1073,22 @@ class MainWindow(QtWidgets.QWidget):
 
         def build_pixmap(
             robot_id: int, friendly_flag: bool, size: int = 48
-        ) -> tuple[tuple, QtGui.QPixmap]:
-            folder = self._team_folder(friendly_flag)
-            key = (folder, robot_id, size)
-            cache = getattr(self, "_tag_cache", {})
-            if key in cache:
-                return key, cache[key]
-
-            try:
-                base = resources.files("gui_package").joinpath(
-                    "teams", folder, f"{robot_id}.png"
-                )
-                with resources.as_file(base) as img_path:
-                    pix = QtGui.QPixmap(str(img_path))
-            except (FileNotFoundError, ModuleNotFoundError, AttributeError):
-                pix = QtGui.QPixmap()
-            if not pix.isNull():
-                transform = QtGui.QTransform()
-                transform.scale(-1.0, -1.0)
-                pix = pix.transformed(
-                    transform, QtCore.Qt.TransformationMode.SmoothTransformation
-                )
-                pix = pix.scaled(
-                    size,
-                    size,
-                    QtCore.Qt.AspectRatioMode.KeepAspectRatio,
-                    QtCore.Qt.TransformationMode.SmoothTransformation,
-                )
-            cache[key] = pix
-            self._tag_cache = cache
-            return key, pix
+        ) -> QtGui.QPixmap:
+            friendly_color = self._last_friendly_color or GuiTeamColor.kYellow
+            friendly_is_yellow = friendly_color == GuiTeamColor.kYellow
+            team_is_yellow = friendly_is_yellow if friendly_flag else (not friendly_is_yellow)
+            pix = self._face_atlas.pixmap(robot_id, team_is_yellow, size)
+            if pix.isNull():
+                pix = QtGui.QPixmap(size, size)
+                pix.fill(QtCore.Qt.GlobalColor.transparent)
+                painter = QtGui.QPainter(pix)
+                painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing, True)
+                color = QtGui.QColor(236, 200, 64) if team_is_yellow else QtGui.QColor(80, 140, 255)
+                painter.setBrush(color)
+                painter.setPen(QtCore.Qt.PenStyle.NoPen)
+                painter.drawEllipse(0, 0, size, size)
+                painter.end()
+            return pix
 
         def ensure_card(kind: str, robot: GuiRobotState, friendly_flag: bool) -> dict:
             key = (kind, robot.id)
@@ -979,9 +1140,6 @@ class MainWindow(QtWidgets.QWidget):
             row.addLayout(text_block, 1)
             row.addStretch()
 
-            insert_at = layout.count() - 1
-            layout.insertWidget(insert_at, card)
-
             info = {
                 "widget": card,
                 "title": title,
@@ -990,7 +1148,6 @@ class MainWindow(QtWidgets.QWidget):
                 "friendly": friendly_flag,
                 "combo": behavior_combo,
                 "behavior_status": behavior_status,
-                "pix_key": None,
             }
 
             if friendly_flag and behavior_combo is not None:
@@ -1010,24 +1167,31 @@ class MainWindow(QtWidgets.QWidget):
             prefix = "Friendly" if friendly_flag else "Opponent"
             info["title"].setText(f"{prefix} #{robot.id}")
             info["pose"].setText(f"x={robot.pose.x:.2f} y={robot.pose.y:.2f}")
-            pix_key, pix = build_pixmap(robot.id, friendly_flag)
+            pix = build_pixmap(robot.id, friendly_flag)
             icon_label: QtWidgets.QLabel = info["icon"]  # type: ignore[assignment]
-            if info.get("pix_key") != pix_key:
-                info["pix_key"] = pix_key
-                if pix.isNull():
-                    icon_label.clear()
-                else:
-                    icon_label.setPixmap(pix)
+            icon_label.setPixmap(pix)
             if friendly_flag:
                 self._sync_behavior_controls(robot.id, info)
 
-        seen_keys: set[tuple[str, int]] = set()
+        # Order cards: all friendlies ascending, followed by opponents ascending.
+        ordered_cards: List[tuple[str, GuiRobotState, bool]] = []
         for robot in sorted(friendly, key=lambda r: r.id):
-            update_card("friendly", robot, True)
-            seen_keys.add(("friendly", robot.id))
+            ordered_cards.append(("friendly", robot, True))
         for robot in sorted(opponent, key=lambda r: r.id):
-            update_card("opponent", robot, False)
-            seen_keys.add(("opponent", robot.id))
+            ordered_cards.append(("opponent", robot, False))
+
+        seen_keys: set[tuple[str, int]] = set()
+        insert_index = 0
+        for kind, robot, friendly_flag in ordered_cards:
+            update_card(kind, robot, friendly_flag)
+            seen_keys.add((kind, robot.id))
+            info = self._decision_cards.get((kind, robot.id))
+            if info:
+                widget = info.get("widget")
+                if widget is not None:
+                    layout.removeWidget(widget)
+                    layout.insertWidget(insert_index, widget)
+                    insert_index += 1
 
         cards = getattr(self, "_decision_cards", {})
         for key in list(cards.keys()):
@@ -1113,6 +1277,8 @@ class GuiRosNode(Node):
             "port",
             "repeat_rate_hz",
             "hold_time_s",
+            "replacement_host",
+            "replacement_port",
         ]
         self._get_param_client = self.create_client(
             GetParameters, "/vision_receiver/get_parameters"
@@ -1135,6 +1301,12 @@ class GuiRosNode(Node):
         robot_service = self._sanitize_service_name(
             self.declare_parameter("robot_command_service", "/robot_commander/send_robot_command").value
         )
+        replacement_robot_service = self._sanitize_service_name(
+            self.declare_parameter("replacement_robot_service", "/robot_commander/send_replacement_robot").value
+        )
+        replacement_ball_service = self._sanitize_service_name(
+            self.declare_parameter("replacement_ball_service", "/robot_commander/send_replacement_ball").value
+        )
         self._get_nav_client = (
             self.create_client(GetNavigationConfig, nav_get_service) if nav_get_service else None
         )
@@ -1144,8 +1316,15 @@ class GuiRosNode(Node):
         self._robot_command_client = (
             self.create_client(SendRobotCommand, robot_service) if robot_service else None
         )
+        self._replacement_robot_client = (
+            self.create_client(SendReplacementRobot, replacement_robot_service) if replacement_robot_service else None
+        )
+        self._replacement_ball_client = (
+            self.create_client(SendReplacementBall, replacement_ball_service) if replacement_ball_service else None
+        )
         self._behavior_assignments: Dict[int, str] = {}
         self._behaviors: Dict[int, BehaviorBase] = {}
+        self._last_behavior_command: Dict[int, str] = {}
         self._nav_config: Optional[RosNavigationConfig] = None
         blue_param = self.declare_parameter("blue_command_port", 10301)
         yellow_param = self.declare_parameter("yellow_command_port", 10302)
@@ -1182,7 +1361,8 @@ class GuiRosNode(Node):
         )
         self._field_dimensions_msg = RosFieldDimensions()
         self._field_geom = FieldGeom()
-        self._path_preview_items: Dict[int, PathPreviewItem] = {}
+        self._path_preview_msgs: Dict[int, RosPathPreview] = {}
+        self._path_preview_visible = False
         self._robot_target_pub = self.create_publisher(RosRobotTarget, target_topic, 10)
         path_qos = QoSProfile(depth=10)
         self._path_preview_sub = self.create_subscription(
@@ -1332,19 +1512,56 @@ class GuiRosNode(Node):
         if msg is None:
             return
         robot_id = int(getattr(msg, "robot_id", -1))
-        item = PathPreviewItem(robot_id=robot_id)
-        item.path = [
-            PathPoint(x=float(pt.x), y=float(pt.y)) for pt in getattr(msg, "path", [])
-        ]
-        item.direct = [
-            PathPoint(x=float(pt.x), y=float(pt.y)) for pt in getattr(msg, "direct", [])
-        ]
-        if not item.path and not item.direct:
-            self._path_preview_items.pop(robot_id, None)
+        if robot_id < 0:
+            return
+        has_path = bool(getattr(msg, "path", []))
+        has_direct = bool(getattr(msg, "direct", []))
+        if not has_path and not has_direct:
+            self._path_preview_msgs.pop(robot_id, None)
         else:
-            self._path_preview_items[robot_id] = item
-        ordered = [self._path_preview_items[rid] for rid in sorted(self._path_preview_items.keys())]
+            self._path_preview_msgs[robot_id] = msg
+        if not self._path_preview_visible:
+            return
+        self._refresh_path_preview_items()
+
+    def handle_path_preview_visibility(self, visible: bool) -> None:
+        self._path_preview_visible = bool(visible)
+        if not self._path_preview_visible:
+            self._field_widget.set_path_preview([])
+            return
+        self._refresh_path_preview_items()
+
+    def _refresh_path_preview_items(self) -> None:
+        if not self._path_preview_visible:
+            self._field_widget.set_path_preview([])
+            return
+        ordered: List[PathPreviewItem] = []
+        for robot_id in sorted(self._path_preview_msgs.keys()):
+            preview = self._path_preview_msgs.get(robot_id)
+            if preview is None:
+                continue
+            ordered.append(self._build_path_preview_item(robot_id, preview))
         self._field_widget.set_path_preview(ordered)
+
+    def _build_path_preview_item(self, robot_id: int, msg: RosPathPreview) -> PathPreviewItem:
+        item = PathPreviewItem(robot_id=robot_id)
+        for pose in getattr(msg, "path", []):
+            try:
+                px = float(getattr(pose, "x", 0.0))
+                py = float(getattr(pose, "y", 0.0))
+            except (TypeError, ValueError):
+                px = 0.0
+                py = 0.0
+            item.path.append(PathPoint(x=px, y=py))
+        for pose in getattr(msg, "direct", []):
+            try:
+                px = float(getattr(pose, "x", 0.0))
+                py = float(getattr(pose, "y", 0.0))
+            except (TypeError, ValueError):
+                px = 0.0
+                py = 0.0
+            item.direct.append(PathPoint(x=px, y=py))
+        return item
 
     def fetch_robot_commander_parameters(
         self, callback: Callable[[bool, str, Dict[str, object]], None]
@@ -1658,20 +1875,87 @@ class GuiRosNode(Node):
 
         future.add_done_callback(_done)
 
+    def teleport_ball(self, x: float, y: float, vx: float = 0.0, vy: float = 0.0) -> None:
+        client = self._replacement_ball_client
+        if client is None:
+            self.get_logger().warn("Ball replacement service unavailable.")
+            return
+        if not client.service_is_ready():
+            if not client.wait_for_service(timeout_sec=0.5):
+                self.get_logger().warn("Ball replacement service not ready.")
+                return
+        request = SendReplacementBall.Request(x=float(x), y=float(y), vx=float(vx), vy=float(vy))
+        future = client.call_async(request)
+        future.add_done_callback(self._on_ball_replacement_response)
+
+    def teleport_robot(
+        self,
+        robot_id: int,
+        is_yellow: bool,
+        x: float,
+        y: float,
+        theta: float,
+        present: bool = True,
+    ) -> None:
+        client = self._replacement_robot_client
+        if client is None:
+            self.get_logger().warn("Robot replacement service unavailable.")
+            return
+        if not client.service_is_ready():
+            if not client.wait_for_service(timeout_sec=0.5):
+                self.get_logger().warn("Robot replacement service not ready.")
+                return
+        request = SendReplacementRobot.Request(
+            robot_id=int(robot_id),
+            is_yellow=bool(is_yellow),
+            x=float(x),
+            y=float(y),
+            theta=float(theta),
+            present=bool(present),
+        )
+        future = client.call_async(request)
+        future.add_done_callback(
+            lambda fut, rid=int(robot_id): self._on_robot_replacement_response(rid, fut)
+        )
+
+    def _on_ball_replacement_response(self, future) -> None:
+        try:
+            response = future.result()
+            if not response.ok:
+                self.get_logger().warn(f"Ball teleport failed: {response.message}")
+        except Exception as exc:  # pragma: no cover - defensive
+            self.get_logger().warn(f"Ball teleport failed: {exc}")
+
+    def _on_robot_replacement_response(self, robot_id: int, future) -> None:
+        try:
+            response = future.result()
+            if not response.ok:
+                self.get_logger().warn(
+                    f"Robot {robot_id} teleport failed: {response.message}"
+                )
+        except Exception as exc:  # pragma: no cover - defensive
+            self.get_logger().warn(f"Robot {robot_id} teleport failed: {exc}")
+
     def assign_behavior(self, robot_id: int, behavior_key: str) -> None:
         key = behavior_key if behavior_key in BEHAVIOR_FACTORY else ""
+        previous = self._last_behavior_command.get(robot_id)
         self._behavior_assignments[robot_id] = key
         if not key:
             self._behaviors.pop(robot_id, None)
             self._last_behavior_command.pop(robot_id, None)
             self._notify_behavior(robot_id, key, "Behavior disabled.")
             return
+        if previous == key and robot_id in self._behaviors:
+            self._notify_behavior(robot_id, key, "Behavior already active.")
+            return
         instance = self._instantiate_behavior(robot_id, key)
         if instance is None:
             self._behaviors.pop(robot_id, None)
+            self._last_behavior_command.pop(robot_id, None)
             self._notify_behavior(robot_id, key, "Waiting for navigation config.")
         else:
             self._behaviors[robot_id] = instance
+            self._last_behavior_command[robot_id] = key
             self._notify_behavior(robot_id, key, "Behavior ready.")
 
     def _instantiate_behavior(self, robot_id: int, behavior_key: str) -> Optional[BehaviorBase]:
@@ -1704,6 +1988,7 @@ class GuiRosNode(Node):
                 instance = self._instantiate_behavior(robot_id, key)
                 if instance is not None:
                     self._behaviors[robot_id] = instance
+                    self._last_behavior_command[robot_id] = key
                     self._notify_behavior(robot_id, key, "Behavior ready.")
         if not self._behaviors:
             return

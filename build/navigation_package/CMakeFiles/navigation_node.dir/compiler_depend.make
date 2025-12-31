@@ -692,12 +692,17 @@ CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o: /home/thxssio/robotics
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/twist2_d__traits.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__type_support.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/path_preview.hpp \
+  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__struct.hpp \
+  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__struct.hpp \
+  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__builder.hpp \
+  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__traits.hpp \
+  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__traits.hpp \
+  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__type_support.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_state.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__struct.hpp \
-  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__struct.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__builder.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__traits.hpp \
-  /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__traits.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__type_support.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_target.hpp \
   /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_target__struct.hpp \
@@ -800,13 +805,15 @@ CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o: /home/thxssio/robotics
 
 /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__type_support.hpp:
 
-/home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__traits.hpp:
-
 /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__traits.hpp:
 
 /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/robot_state__struct.hpp:
 
 /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/robot_state.hpp:
+
+/home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/pose2_d__traits.hpp:
+
+/home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__traits.hpp:
 
 /home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/control_command__type_support.hpp:
 
@@ -831,6 +838,8 @@ CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o: /home/thxssio/robotics
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
+
+/home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
@@ -1042,6 +1051,8 @@ CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o: /home/thxssio/robotics
 
 /opt/ros/humble/include/rmw/rmw/security_options.h:
 
+/home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/path_preview.hpp:
+
 /usr/include/c++/11/csignal:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
@@ -1159,6 +1170,8 @@ CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o: /home/thxssio/robotics
 /usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__type_support.hpp:
 
 /usr/include/c++/11/memory:
 
@@ -1747,6 +1760,8 @@ CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o: /home/thxssio/robotics
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
+
+/home/thxssio/robotics_framework/install/interface_package/include/interface_package/interface_package/msg/detail/path_preview__struct.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
